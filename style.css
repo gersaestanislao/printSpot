@@ -35,7 +35,8 @@
   transition: height 500ms ease-in-out; }
 
 .owl-carousel .owl-item {
-  float: left; }
+  float: left;
+  /*height:320px;*/ }
 
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
@@ -5136,7 +5137,7 @@ nav ul a span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 14px; }
 
 .row:after {
   content: "";
@@ -9191,7 +9192,7 @@ section.services {
       height: 100%;
       width: 100%;
       background: red;
-      padding: 36px;
+      padding:10px 36px 0;
       font-family: Myriad Pro Regular;
       font-size: 22px;
       text-align: left;
@@ -9203,7 +9204,7 @@ section.services {
       section.services article:nth-child(4) .container .owl-buttons {
         font-size: 0;
         position: relative;
-		margin-top: 30px;
+		margin-top: -20px;
 		float: right;
 		}
         section.services article:nth-child(4) .container .owl-buttons .owl-prev {
@@ -9873,7 +9874,7 @@ section.legales .wrapper {
 
 
 .img-promoss {
-	width:50%;
+	width:45%;
 	height:auto;
 	display: block;
 	float: left;
@@ -9882,20 +9883,22 @@ section.legales .wrapper {
 .img-promoss img {
 	width:100%;
 	height:auto;
+	max-width:230px;
 	}
 
 .txt-promoss {
-	width:50%;
+	width:55%;
 	height:auto;
-	display: block;
+	padding-top:20px;
+	/*display: block;*/
 	float: left;
 	color:#FFF;
 	}
 
 .txt-promoss strong {
 	font-family: Myriad Pro Semibold;
-	font-size:18px !important;
-	display: block;
+	font-size:19px !important;
+	/*display: block;*/
 	padding-top: 45px;
 	}
 
@@ -9905,6 +9908,7 @@ section.legales .wrapper {
     font-size: 16px !important;
     display: block;
     padding-bottom: 10px;
+	line-height:21px;
 
 }
 	
