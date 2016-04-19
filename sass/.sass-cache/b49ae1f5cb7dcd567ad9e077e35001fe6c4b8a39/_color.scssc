@@ -1,0 +1,573 @@
+3.4.16 (Selective Steve)
+d9c16e12b94d9157d34d35ac1fe6db45194d69f0
+o:Sass::Tree::RootNode:@template"*"// Utility Color Classes
+
+//.success {
+//
+//}
+
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+
+$materialize-red: (
+  "lighten-5":  #fdeaeb,
+  "lighten-4":  #f8c1c3,
+  "lighten-3":  #f3989b,
+  "lighten-2":  #ee6e73,
+  "lighten-1":  #ea454b,
+  "base":       #e51c23,
+  "darken-1":   #d0181e,
+  "darken-2":   #b9151b,
+  "darken-3":   #a21318,
+  "darken-4":   #8b1014,
+);
+
+$red: (
+  "lighten-5":  #FFEBEE,
+  "lighten-4":  #FFCDD2,
+  "lighten-3":  #EF9A9A,
+  "lighten-2":  #E57373,
+  "lighten-1":  #EF5350,
+  "base":       #F44336,
+  "darken-1":   #E53935,
+  "darken-2":   #D32F2F,
+  "darken-3":   #C62828,
+  "darken-4":   #B71C1C,
+  "accent-1":    #FF8A80,
+  "accent-2":    #FF5252,
+  "accent-3":    #FF1744,
+  "accent-4":    #D50000
+);
+
+$pink: (
+  "lighten-5":  #fce4ec,
+  "lighten-4":  #f8bbd0,
+  "lighten-3":  #f48fb1,
+  "lighten-2":  #f06292,
+  "lighten-1":  #ec407a,
+  "base":       #e91e63,
+  "darken-1":   #d81b60,
+  "darken-2":   #c2185b,
+  "darken-3":   #ad1457,
+  "darken-4":   #880e4f,
+  "accent-1":    #ff80ab,
+  "accent-2":    #ff4081,
+  "accent-3":    #f50057,
+  "accent-4":    #c51162
+);
+
+$purple: (
+  "lighten-5":  #f3e5f5,
+  "lighten-4":  #e1bee7,
+  "lighten-3":  #ce93d8,
+  "lighten-2":  #ba68c8,
+  "lighten-1":  #ab47bc,
+  "base":       #9c27b0,
+  "darken-1":   #8e24aa,
+  "darken-2":   #7b1fa2,
+  "darken-3":   #6a1b9a,
+  "darken-4":   #4a148c,
+  "accent-1":    #ea80fc,
+  "accent-2":    #e040fb,
+  "accent-3":    #d500f9,
+  "accent-4":    #aa00ff
+);
+
+$deep-purple: (
+  "lighten-5":  #ede7f6,
+  "lighten-4":  #d1c4e9,
+  "lighten-3":  #b39ddb,
+  "lighten-2":  #9575cd,
+  "lighten-1":  #7e57c2,
+  "base":       #673ab7,
+  "darken-1":   #5e35b1,
+  "darken-2":   #512da8,
+  "darken-3":   #4527a0,
+  "darken-4":   #311b92,
+  "accent-1":    #b388ff,
+  "accent-2":    #7c4dff,
+  "accent-3":    #651fff,
+  "accent-4":    #6200ea
+);
+
+$indigo: (
+  "lighten-5":  #e8eaf6,
+  "lighten-4":  #c5cae9,
+  "lighten-3":  #9fa8da,
+  "lighten-2":  #7986cb,
+  "lighten-1":  #5c6bc0,
+  "base":       #3f51b5,
+  "darken-1":   #3949ab,
+  "darken-2":   #303f9f,
+  "darken-3":   #283593,
+  "darken-4":   #1a237e,
+  "accent-1":    #8c9eff,
+  "accent-2":    #536dfe,
+  "accent-3":    #3d5afe,
+  "accent-4":    #304ffe
+);
+
+$blue: (
+  "lighten-5":  #E3F2FD,
+  "lighten-4":  #BBDEFB,
+  "lighten-3":  #90CAF9,
+  "lighten-2":  #64B5F6,
+  "lighten-1":  #42A5F5,
+  "base":       #2196F3,
+  "darken-1":   #1E88E5,
+  "darken-2":   #1976D2,
+  "darken-3":   #1565C0,
+  "darken-4":   #0D47A1,
+  "accent-1":    #82B1FF,
+  "accent-2":    #448AFF,
+  "accent-3":    #2979FF,
+  "accent-4":    #2962FF
+);
+
+$light-blue: (
+  "lighten-5":  #e1f5fe,
+  "lighten-4":  #b3e5fc,
+  "lighten-3":  #81d4fa,
+  "lighten-2":  #4fc3f7,
+  "lighten-1":  #29b6f6,
+  "base":       #03a9f4,
+  "darken-1":   #039be5,
+  "darken-2":   #0288d1,
+  "darken-3":   #0277bd,
+  "darken-4":   #01579b,
+  "accent-1":    #80d8ff,
+  "accent-2":    #40c4ff,
+  "accent-3":    #00b0ff,
+  "accent-4":    #0091ea
+);
+
+$cyan: (
+  "lighten-5":  #e0f7fa,
+  "lighten-4":  #b2ebf2,
+  "lighten-3":  #80deea,
+  "lighten-2":  #4dd0e1,
+  "lighten-1":  #26c6da,
+  "base":       #00bcd4,
+  "darken-1":   #00acc1,
+  "darken-2":   #0097a7,
+  "darken-3":   #00838f,
+  "darken-4":   #006064,
+  "accent-1":    #84ffff,
+  "accent-2":    #18ffff,
+  "accent-3":    #00e5ff,
+  "accent-4":    #00b8d4
+);
+
+$teal: (
+  "lighten-5":  #e0f2f1,
+  "lighten-4":  #b2dfdb,
+  "lighten-3":  #80cbc4,
+  "lighten-2":  #4db6ac,
+  "lighten-1":  #26a69a,
+  "base":       #009688,
+  "darken-1":   #00897b,
+  "darken-2":   #00796b,
+  "darken-3":   #00695c,
+  "darken-4":   #004d40,
+  "accent-1":    #a7ffeb,
+  "accent-2":    #64ffda,
+  "accent-3":    #1de9b6,
+  "accent-4":    #00bfa5
+);
+
+$green: (
+  "lighten-5":  #E8F5E9,
+  "lighten-4":  #C8E6C9,
+  "lighten-3":  #A5D6A7,
+  "lighten-2":  #81C784,
+  "lighten-1":  #66BB6A,
+  "base":       #4CAF50,
+  "darken-1":   #43A047,
+  "darken-2":   #388E3C,
+  "darken-3":   #2E7D32,
+  "darken-4":   #1B5E20,
+  "accent-1":    #B9F6CA,
+  "accent-2":    #69F0AE,
+  "accent-3":    #00E676,
+  "accent-4":    #00C853
+);
+
+$light-green: (
+  "lighten-5":  #f1f8e9,
+  "lighten-4":  #dcedc8,
+  "lighten-3":  #c5e1a5,
+  "lighten-2":  #aed581,
+  "lighten-1":  #9ccc65,
+  "base":       #8bc34a,
+  "darken-1":   #7cb342,
+  "darken-2":   #689f38,
+  "darken-3":   #558b2f,
+  "darken-4":   #33691e,
+  "accent-1":    #ccff90,
+  "accent-2":    #b2ff59,
+  "accent-3":    #76ff03,
+  "accent-4":    #64dd17
+);
+
+$lime: (
+  "lighten-5":  #f9fbe7,
+  "lighten-4":  #f0f4c3,
+  "lighten-3":  #e6ee9c,
+  "lighten-2":  #dce775,
+  "lighten-1":  #d4e157,
+  "base":       #cddc39,
+  "darken-1":   #c0ca33,
+  "darken-2":   #afb42b,
+  "darken-3":   #9e9d24,
+  "darken-4":   #827717,
+  "accent-1":    #f4ff81,
+  "accent-2":    #eeff41,
+  "accent-3":    #c6ff00,
+  "accent-4":    #aeea00
+);
+
+$yellow: (
+  "lighten-5":  #fffde7,
+  "lighten-4":  #fff9c4,
+  "lighten-3":  #fff59d,
+  "lighten-2":  #fff176,
+  "lighten-1":  #ffee58,
+  "base":       #ffeb3b,
+  "darken-1":   #fdd835,
+  "darken-2":   #fbc02d,
+  "darken-3":   #f9a825,
+  "darken-4":   #f57f17,
+  "accent-1":    #ffff8d,
+  "accent-2":    #ffff00,
+  "accent-3":    #ffea00,
+  "accent-4":    #ffd600
+);
+
+$amber: (
+  "lighten-5":  #fff8e1,
+  "lighten-4":  #ffecb3,
+  "lighten-3":  #ffe082,
+  "lighten-2":  #ffd54f,
+  "lighten-1":  #ffca28,
+  "base":       #ffc107,
+  "darken-1":   #ffb300,
+  "darken-2":   #ffa000,
+  "darken-3":   #ff8f00,
+  "darken-4":   #ff6f00,
+  "accent-1":    #ffe57f,
+  "accent-2":    #ffd740,
+  "accent-3":    #ffc400,
+  "accent-4":    #ffab00
+);
+
+$orange: (
+  "lighten-5":  #fff3e0,
+  "lighten-4":  #ffe0b2,
+  "lighten-3":  #ffcc80,
+  "lighten-2":  #ffb74d,
+  "lighten-1":  #ffa726,
+  "base":       #ff9800,
+  "darken-1":   #fb8c00,
+  "darken-2":   #f57c00,
+  "darken-3":   #ef6c00,
+  "darken-4":   #e65100,
+  "accent-1":    #ffd180,
+  "accent-2":    #ffab40,
+  "accent-3":    #ff9100,
+  "accent-4":    #ff6d00
+);
+
+$deep-orange: (
+  "lighten-5":  #fbe9e7,
+  "lighten-4":  #ffccbc,
+  "lighten-3":  #ffab91,
+  "lighten-2":  #ff8a65,
+  "lighten-1":  #ff7043,
+  "base":       #ff5722,
+  "darken-1":   #f4511e,
+  "darken-2":   #e64a19,
+  "darken-3":   #d84315,
+  "darken-4":   #bf360c,
+  "accent-1":    #ff9e80,
+  "accent-2":    #ff6e40,
+  "accent-3":    #ff3d00,
+  "accent-4":    #dd2c00
+);
+
+$brown: (
+  "lighten-5":  #efebe9,
+  "lighten-4":  #d7ccc8,
+  "lighten-3":  #bcaaa4,
+  "lighten-2":  #a1887f,
+  "lighten-1":  #8d6e63,
+  "base":       #795548,
+  "darken-1":   #6d4c41,
+  "darken-2":   #5d4037,
+  "darken-3":   #4e342e,
+  "darken-4":   #3e2723
+);
+
+$blue-grey: (
+  "lighten-5":  #eceff1,
+  "lighten-4":  #cfd8dc,
+  "lighten-3":  #b0bec5,
+  "lighten-2":  #90a4ae,
+  "lighten-1":  #78909c,
+  "base":       #607d8b,
+  "darken-1":   #546e7a,
+  "darken-2":   #455a64,
+  "darken-3":   #37474f,
+  "darken-4":   #263238
+);
+
+$grey: (
+  "lighten-5":  #fafafa,
+  "lighten-4":  #f5f5f5,
+  "lighten-3":  #eeeeee,
+  "lighten-2":  #e0e0e0,
+  "lighten-1":  #bdbdbd,
+  "base":       #9e9e9e,
+  "darken-1":   #757575,
+  "darken-2":   #616161,
+  "darken-3":   #424242,
+  "darken-4":   #212121
+);
+
+$shades: (
+  "black":        #000000,
+  "white":        #FFFFFF,
+  "transparent":  transparent
+);
+
+$colors: (
+  "materialize-red": $materialize-red,
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "deep-purple": $deep-purple,
+  "indigo": $indigo,
+  "blue": $blue,
+  "light-blue": $light-blue,
+  "cyan": $cyan,
+  "teal": $teal,
+  "green": $green,
+  "light-green": $light-green,
+  "lime": $lime,
+  "yellow": $yellow,
+  "amber": $amber,
+  "orange": $orange,
+  "deep-orange": $deep-orange,
+  "brown": $brown,
+  "blue-grey": $blue-grey,
+  "grey": $grey,
+  "shades": $shades
+);
+
+
+// Color Classes
+
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color_value !important;
+      }
+    }
+    @else {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text.text-#{$color_type} {
+        color: $color_value !important;
+      }
+    }
+  }
+}
+
+// Shade classes
+@each $color, $color_value in $shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .#{$color}-text {
+    color: $color_value !important;
+  }
+}
+
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{name}` in $colors.";
+  @return null;
+}
+
+:@children[$o:Sass::Tree::CommentNode
+:
+@type:silent:@value[" /* Utility Color Classes */;[ :@options{ :
+@lineio;
+;	;
+;["/*.success {
+ *
+ *} */;[ ;@;io;
+;	;
+;["[/* Google Color Palette defined: http://www.google.com/design/spec/style/color.html */;[ ;@;io:Sass::Tree::VariableNode:
+@name"materialize-red;[ :@global0;@:@guarded0:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti;i:@importero: Sass::Importers::Filesystem:@real_root"-/Applications/MAMP/htdocs/PrintSpot/sass:
+@root"-/Applications/MAMP/htdocs/PrintSpot/sass:@same_name_warningso:Set:
+@hash{ :
+@file"components/_color.scss:@end_poso;;i;i;i:
+@expro:#Sass::Script::Tree::MapLiteral
+:@pairs[[o: Sass::Script::Tree::Literal	;o: Sass::Script::Value::String;	:string;"lighten-5;@:@filename@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o:Sass::Script::Value::Color	;0:@attrs{	:redi˝:
+greeniÍ:
+alphai:	blueiÎ;@:@representation"#fdeaeb;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i¯;*i¡;+i;,i√;@;-"#f8c1c3;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÛ;*iò;+i;,iõ;@;-"#f3989b;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÓ;*is;+i;,ix;@;-"#ee6e73;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÍ;*iJ;+i;,iP;@;-"#ea454b;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÂ;*i!;+i;,i(;@;-"#e51c23;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i–;*i;+i;,i#;@;-"#d0181e;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iπ;*i;+i;,i ;@;-"#b9151b;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i¢;*i;+i;,i;@;-"#a21318;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iã;*i;+i;,i;@;-"#8b1014;&@;o;	;o;;i;i;@;@;o;;i;i;i;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;;"red;[ ;0;@;0;o;	;o;;i;i;@;@;o;;i;i+;i; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÎ;+i;,iÓ;@;-"#FFEBEE;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÕ;+i;,i“;@;-"#FFCDD2;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÔ;*iö;+i;,iö;@;-"#EF9A9A;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i ;@;@;o;;i;i ;i o;#	;o;'	;0;({	;)iÂ;*ix;+i;,ix;@;-"#E57373;&@;o;	;o;;i;i ;@;@;o;;i;i ;i [o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i!;@;@;o;;i;i!;i!o;#	;o;'	;0;({	;)iÔ;*iX;+i;,iU;@;-"#EF5350;&@;o;	;o;;i;i!;@;@;o;;i;i!;i![o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i";@;@;o;;i;i";i"o;#	;o;'	;0;({	;)iÙ;*iH;+i;,i;;@;-"#F44336;&@;o;	;o;;i;i";@;@;o;;i;i";i"[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i#;@;@;o;;i;i#;i#o;#	;o;'	;0;({	;)iÂ;*i>;+i;,i:;@;-"#E53935;&@;o;	;o;;i;i#;@;@;o;;i;i#;i#[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i$;@;@;o;;i;i$;i$o;#	;o;'	;0;({	;)i”;*i4;+i;,i4;@;-"#D32F2F;&@;o;	;o;;i;i$;@;@;o;;i;i$;i$[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i%;@;@;o;;i;i%;i%o;#	;o;'	;0;({	;)i∆;*i-;+i;,i-;@;-"#C62828;&@;o;	;o;;i;i%;@;@;o;;i;i%;i%[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i&;@;@;o;;i;i&;i&o;#	;o;'	;0;({	;)i∑;*i!;+i;,i!;@;-"#B71C1C;&@;o;	;o;;i;i&;@;@;o;;i;i&;i&[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i';@;@;o;;i;i';i'o;#	;o;'	;0;({	;)iˇ;*iä;+i;,iÄ;@;-"#FF8A80;&@;o;	;o;;i;i';@;@;o;;i;i';i'[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i(;@;@;o;;i;i(;i(o;#	;o;'	;0;({	;)iˇ;*iW;+i;,iW;@;-"#FF5252;&@;o;	;o;;i;i(;@;@;o;;i;i(;i([o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i);@;@;o;;i;i);i)o;#	;o;'	;0;({	;)iˇ;*i;+i;,iI;@;-"#FF1744;&@;o;	;o;;i;i);@;@;o;;i;i);i)[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i*;@;@;o;;i;i*;i*o;#	;o;'	;0;({	;)i’;*i ;+i;,i ;@;-"#D50000;&@;o;	;o;;i;i*;@;@;o;;i;i*;i*;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;;"	pink;[ ;0;@;0;o;	;o;;i;i-;@;@;o;;i;i<;i-; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i.;@;@;o;;i;i.;i.o;#	;o;'	;0;({	;)i¸;*i‰;+i;,iÏ;@;-"#fce4ec;&@;o;	;o;;i;i.;@;@;o;;i;i.;i.[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i/;@;@;o;;i;i/;i/o;#	;o;'	;0;({	;)i¯;*iª;+i;,i–;@;-"#f8bbd0;&@;o;	;o;;i;i/;@;@;o;;i;i/;i/[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i0;@;@;o;;i;i0;i0o;#	;o;'	;0;({	;)iÙ;*iè;+i;,i±;@;-"#f48fb1;&@;o;	;o;;i;i0;@;@;o;;i;i0;i0[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i1;@;@;o;;i;i1;i1o;#	;o;'	;0;({	;)i;*ig;+i;,ií;@;-"#f06292;&@;o;	;o;;i;i1;@;@;o;;i;i1;i1[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i2;@;@;o;;i;i2;i2o;#	;o;'	;0;({	;)iÏ;*iE;+i;,i;@;-"#ec407a;&@;o;	;o;;i;i2;@;@;o;;i;i2;i2[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i3;@;@;o;;i;i3;i3o;#	;o;'	;0;({	;)iÈ;*i#;+i;,ih;@;-"#e91e63;&@;o;	;o;;i;i3;@;@;o;;i;i3;i3[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i4;@;@;o;;i;i4;i4o;#	;o;'	;0;({	;)iÿ;*i ;+i;,ie;@;-"#d81b60;&@;o;	;o;;i;i4;@;@;o;;i;i4;i4[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i5;@;@;o;;i;i5;i5o;#	;o;'	;0;({	;)i¬;*i;+i;,i`;@;-"#c2185b;&@;o;	;o;;i;i5;@;@;o;;i;i5;i5[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i6;@;@;o;;i;i6;i6o;#	;o;'	;0;({	;)i≠;*i;+i;,i\;@;-"#ad1457;&@;o;	;o;;i;i6;@;@;o;;i;i6;i6[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i7;@;@;o;;i;i7;i7o;#	;o;'	;0;({	;)ià;*i;+i;,iT;@;-"#880e4f;&@;o;	;o;;i;i7;@;@;o;;i;i7;i7[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i8;@;@;o;;i;i8;i8o;#	;o;'	;0;({	;)iˇ;*iÄ;+i;,i´;@;-"#ff80ab;&@;o;	;o;;i;i8;@;@;o;;i;i8;i8[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i9;@;@;o;;i;i9;i9o;#	;o;'	;0;({	;)iˇ;*iE;+i;,iÅ;@;-"#ff4081;&@;o;	;o;;i;i9;@;@;o;;i;i9;i9[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i:;@;@;o;;i;i:;i:o;#	;o;'	;0;({	;)iı;*i ;+i;,i\;@;-"#f50057;&@;o;	;o;;i;i:;@;@;o;;i;i:;i:[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i;;@;@;o;;i;i;;i;o;#	;o;'	;0;({	;)i≈;*i;+i;,ig;@;-"#c51162;&@;o;	;o;;i;i;;@;@;o;;i;i;;i;;@;&@;o;	;o;;i;i-;@;@;o;;i;i.;i-o;;"purple;[ ;0;@;0;o;	;o;;i;i>;@;@;o;;i;iM;i>; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i?;@;@;o;;i;i?;i?o;#	;o;'	;0;({	;)iÛ;*iÂ;+i;,iı;@;-"#f3e5f5;&@;o;	;o;;i;i?;@;@;o;;i;i?;i?[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i@;@;@;o;;i;i@;i@o;#	;o;'	;0;({	;)i·;*iæ;+i;,iÁ;@;-"#e1bee7;&@;o;	;o;;i;i@;@;@;o;;i;i@;i@[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iA;@;@;o;;i;iA;iAo;#	;o;'	;0;({	;)iŒ;*iì;+i;,iÿ;@;-"#ce93d8;&@;o;	;o;;i;iA;@;@;o;;i;iA;iA[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iB;@;@;o;;i;iB;iBo;#	;o;'	;0;({	;)i∫;*im;+i;,i»;@;-"#ba68c8;&@;o;	;o;;i;iB;@;@;o;;i;iB;iB[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iC;@;@;o;;i;iC;iCo;#	;o;'	;0;({	;)i´;*iL;+i;,iº;@;-"#ab47bc;&@;o;	;o;;i;iC;@;@;o;;i;iC;iC[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iD;@;@;o;;i;iD;iDo;#	;o;'	;0;({	;)iú;*i,;+i;,i∞;@;-"#9c27b0;&@;o;	;o;;i;iD;@;@;o;;i;iD;iD[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iE;@;@;o;;i;iE;iEo;#	;o;'	;0;({	;)ié;*i);+i;,i™;@;-"#8e24aa;&@;o;	;o;;i;iE;@;@;o;;i;iE;iE[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iF;@;@;o;;i;iF;iFo;#	;o;'	;0;({	;)i{;*i$;+i;,i¢;@;-"#7b1fa2;&@;o;	;o;;i;iF;@;@;o;;i;iF;iF[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iG;@;@;o;;i;iG;iGo;#	;o;'	;0;({	;)io;*i ;+i;,iö;@;-"#6a1b9a;&@;o;	;o;;i;iG;@;@;o;;i;iG;iG[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iH;@;@;o;;i;iH;iHo;#	;o;'	;0;({	;)iO;*i;+i;,iå;@;-"#4a148c;&@;o;	;o;;i;iH;@;@;o;;i;iH;iH[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iI;@;@;o;;i;iI;iIo;#	;o;'	;0;({	;)iÍ;*iÄ;+i;,i¸;@;-"#ea80fc;&@;o;	;o;;i;iI;@;@;o;;i;iI;iI[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iJ;@;@;o;;i;iJ;iJo;#	;o;'	;0;({	;)i‡;*iE;+i;,i˚;@;-"#e040fb;&@;o;	;o;;i;iJ;@;@;o;;i;iJ;iJ[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iK;@;@;o;;i;iK;iKo;#	;o;'	;0;({	;)i’;*i ;+i;,i˘;@;-"#d500f9;&@;o;	;o;;i;iK;@;@;o;;i;iK;iK[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iL;@;@;o;;i;iL;iLo;#	;o;'	;0;({	;)i™;*i ;+i;,iˇ;@;-"#aa00ff;&@;o;	;o;;i;iL;@;@;o;;i;iL;iL;@;&@;o;	;o;;i;i>;@;@;o;;i;i?;i>o;;"deep-purple;[ ;0;@;0;o;	;o;;i;iO;@;@;o;;i;i^;iO; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;iP;@;@;o;;i;iP;iPo;#	;o;'	;0;({	;)iÌ;*iÁ;+i;,iˆ;@;-"#ede7f6;&@;o;	;o;;i;iP;@;@;o;;i;iP;iP[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;iQ;@;@;o;;i;iQ;iQo;#	;o;'	;0;({	;)i—;*iƒ;+i;,iÈ;@;-"#d1c4e9;&@;o;	;o;;i;iQ;@;@;o;;i;iQ;iQ[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iR;@;@;o;;i;iR;iRo;#	;o;'	;0;({	;)i≥;*iù;+i;,i€;@;-"#b39ddb;&@;o;	;o;;i;iR;@;@;o;;i;iR;iR[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iS;@;@;o;;i;iS;iSo;#	;o;'	;0;({	;)iï;*iz;+i;,iÕ;@;-"#9575cd;&@;o;	;o;;i;iS;@;@;o;;i;iS;iS[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iT;@;@;o;;i;iT;iTo;#	;o;'	;0;({	;)i~;*i\;+i;,i¬;@;-"#7e57c2;&@;o;	;o;;i;iT;@;@;o;;i;iT;iT[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iU;@;@;o;;i;iU;iUo;#	;o;'	;0;({	;)il;*i?;+i;,i∑;@;-"#673ab7;&@;o;	;o;;i;iU;@;@;o;;i;iU;iU[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iV;@;@;o;;i;iV;iVo;#	;o;'	;0;({	;)ic;*i:;+i;,i±;@;-"#5e35b1;&@;o;	;o;;i;iV;@;@;o;;i;iV;iV[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iW;@;@;o;;i;iW;iWo;#	;o;'	;0;({	;)iV;*i2;+i;,i®;@;-"#512da8;&@;o;	;o;;i;iW;@;@;o;;i;iW;iW[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iX;@;@;o;;i;iX;iXo;#	;o;'	;0;({	;)iJ;*i,;+i;,i†;@;-"#4527a0;&@;o;	;o;;i;iX;@;@;o;;i;iX;iX[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iY;@;@;o;;i;iY;iYo;#	;o;'	;0;({	;)i6;*i ;+i;,ií;@;-"#311b92;&@;o;	;o;;i;iY;@;@;o;;i;iY;iY[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iZ;@;@;o;;i;iZ;iZo;#	;o;'	;0;({	;)i≥;*ià;+i;,iˇ;@;-"#b388ff;&@;o;	;o;;i;iZ;@;@;o;;i;iZ;iZ[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i[;@;@;o;;i;i[;i[o;#	;o;'	;0;({	;)i|;*iR;+i;,iˇ;@;-"#7c4dff;&@;o;	;o;;i;i[;@;@;o;;i;i[;i[[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i\;@;@;o;;i;i\;i\o;#	;o;'	;0;({	;)ij;*i$;+i;,iˇ;@;-"#651fff;&@;o;	;o;;i;i\;@;@;o;;i;i\;i\[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i];@;@;o;;i;i];i]o;#	;o;'	;0;({	;)ig;*i ;+i;,iÍ;@;-"#6200ea;&@;o;	;o;;i;i];@;@;o;;i;i];i];@;&@;o;	;o;;i;iO;@;@;o;;i;iP;iOo;;"indigo;[ ;0;@;0;o;	;o;;i;i`;@;@;o;;i;io;i`; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;ia;@;@;o;;i;ia;iao;#	;o;'	;0;({	;)iË;*iÍ;+i;,iˆ;@;-"#e8eaf6;&@;o;	;o;;i;ia;@;@;o;;i;ia;ia[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;ib;@;@;o;;i;ib;ibo;#	;o;'	;0;({	;)i≈;*i ;+i;,iÈ;@;-"#c5cae9;&@;o;	;o;;i;ib;@;@;o;;i;ib;ib[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;ic;@;@;o;;i;ic;ico;#	;o;'	;0;({	;)iü;*i®;+i;,i⁄;@;-"#9fa8da;&@;o;	;o;;i;ic;@;@;o;;i;ic;ic[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;id;@;@;o;;i;id;ido;#	;o;'	;0;({	;)i~;*iÜ;+i;,iÀ;@;-"#7986cb;&@;o;	;o;;i;id;@;@;o;;i;id;id[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;ie;@;@;o;;i;ie;ieo;#	;o;'	;0;({	;)ia;*ip;+i;,i¿;@;-"#5c6bc0;&@;o;	;o;;i;ie;@;@;o;;i;ie;ie[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;if;@;@;o;;i;if;ifo;#	;o;'	;0;({	;)iD;*iV;+i;,iµ;@;-"#3f51b5;&@;o;	;o;;i;if;@;@;o;;i;if;if[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;ig;@;@;o;;i;ig;igo;#	;o;'	;0;({	;)i>;*iN;+i;,i´;@;-"#3949ab;&@;o;	;o;;i;ig;@;@;o;;i;ig;ig[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;ih;@;@;o;;i;ih;iho;#	;o;'	;0;({	;)i5;*iD;+i;,iü;@;-"#303f9f;&@;o;	;o;;i;ih;@;@;o;;i;ih;ih[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;ii;@;@;o;;i;ii;iio;#	;o;'	;0;({	;)i-;*i:;+i;,iì;@;-"#283593;&@;o;	;o;;i;ii;@;@;o;;i;ii;ii[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;ij;@;@;o;;i;ij;ijo;#	;o;'	;0;({	;)i;*i(;+i;,i~;@;-"#1a237e;&@;o;	;o;;i;ij;@;@;o;;i;ij;ij[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;ik;@;@;o;;i;ik;iko;#	;o;'	;0;({	;)iå;*iû;+i;,iˇ;@;-"#8c9eff;&@;o;	;o;;i;ik;@;@;o;;i;ik;ik[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;il;@;@;o;;i;il;ilo;#	;o;'	;0;({	;)iX;*ir;+i;,i˛;@;-"#536dfe;&@;o;	;o;;i;il;@;@;o;;i;il;il[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;im;@;@;o;;i;im;imo;#	;o;'	;0;({	;)iB;*i_;+i;,i˛;@;-"#3d5afe;&@;o;	;o;;i;im;@;@;o;;i;im;im[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;in;@;@;o;;i;in;ino;#	;o;'	;0;({	;)i5;*iT;+i;,i˛;@;-"#304ffe;&@;o;	;o;;i;in;@;@;o;;i;in;in;@;&@;o;	;o;;i;i`;@;@;o;;i;ia;i`o;;"	blue;[ ;0;@;0;o;	;o;;i;iq;@;@;o;;i;i{;iq; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;ir;@;@;o;;i;ir;iro;#	;o;'	;0;({	;)i„;*iÚ;+i;,i˝;@;-"#E3F2FD;&@;o;	;o;;i;ir;@;@;o;;i;ir;ir[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;is;@;@;o;;i;is;iso;#	;o;'	;0;({	;)iª;*iﬁ;+i;,i˚;@;-"#BBDEFB;&@;o;	;o;;i;is;@;@;o;;i;is;is[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;it;@;@;o;;i;it;ito;#	;o;'	;0;({	;)iê;*i ;+i;,i˘;@;-"#90CAF9;&@;o;	;o;;i;it;@;@;o;;i;it;it[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iu;@;@;o;;i;iu;iuo;#	;o;'	;0;({	;)ii;*iµ;+i;,iˆ;@;-"#64B5F6;&@;o;	;o;;i;iu;@;@;o;;i;iu;iu[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iv;@;@;o;;i;iv;ivo;#	;o;'	;0;({	;)iG;*i•;+i;,iı;@;-"#42A5F5;&@;o;	;o;;i;iv;@;@;o;;i;iv;iv[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iw;@;@;o;;i;iw;iwo;#	;o;'	;0;({	;)i&;*iñ;+i;,iÛ;@;-"#2196F3;&@;o;	;o;;i;iw;@;@;o;;i;iw;iw[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;ix;@;@;o;;i;ix;ixo;#	;o;'	;0;({	;)i#;*ià;+i;,iÂ;@;-"#1E88E5;&@;o;	;o;;i;ix;@;@;o;;i;ix;ix[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iy;@;@;o;;i;iy;iyo;#	;o;'	;0;({	;)i;*i{;+i;,i“;@;-"#1976D2;&@;o;	;o;;i;iy;@;@;o;;i;iy;iy[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iz;@;@;o;;i;iz;izo;#	;o;'	;0;({	;)i;*ij;+i;,i¿;@;-"#1565C0;&@;o;	;o;;i;iz;@;@;o;;i;iz;iz[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i{;@;@;o;;i;i{;i{o;#	;o;'	;0;({	;)i;*iL;+i;,i°;@;-"#0D47A1;&@;o;	;o;;i;i{;@;@;o;;i;i{;i{[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i|;@;@;o;;i;i|;i|o;#	;o;'	;0;({	;)iÇ;*i±;+i;,iˇ;@;-"#82B1FF;&@;o;	;o;;i;i|;@;@;o;;i;i|;i|[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i};@;@;o;;i;i};i}o;#	;o;'	;0;({	;)iI;*iä;+i;,iˇ;@;-"#448AFF;&@;o;	;o;;i;i};@;@;o;;i;i};i}[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i~;@;@;o;;i;i~;i~o;#	;o;'	;0;({	;)i.;*i~;+i;,iˇ;@;-"#2979FF;&@;o;	;o;;i;i~;@;@;o;;i;i~;i~[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i.;*ig;+i;,iˇ;@;-"#2962FF;&@;o;	;o;;i;i;@;@;o;;i;i;i;@;&@;o;	;o;;i;iq;@;@;o;;i;ir;iqo;;"light-blue;[ ;0;@;0;o;	;o;;i;i};@;@;o;;i;iå;i}; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i~;@;@;o;;i;i~;i~o;#	;o;'	;0;({	;)i·;*iı;+i;,i˛;@;-"#e1f5fe;&@;o;	;o;;i;i~;@;@;o;;i;i~;i~[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i≥;*iÂ;+i;,i¸;@;-"#b3e5fc;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iÄ;@;@;o;;i;iÄ;iÄo;#	;o;'	;0;({	;)iÅ;*i‘;+i;,i˙;@;-"#81d4fa;&@;o;	;o;;i;iÄ;@;@;o;;i;iÄ;iÄ[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iÅ;@;@;o;;i;iÅ;iÅo;#	;o;'	;0;({	;)iT;*i√;+i;,i˜;@;-"#4fc3f7;&@;o;	;o;;i;iÅ;@;@;o;;i;iÅ;iÅ[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iÇ;@;@;o;;i;iÇ;iÇo;#	;o;'	;0;({	;)i.;*i∂;+i;,iˆ;@;-"#29b6f6;&@;o;	;o;;i;iÇ;@;@;o;;i;iÇ;iÇ[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iÉ;@;@;o;;i;iÉ;iÉo;#	;o;'	;0;({	;)i;*i©;+i;,iÙ;@;-"#03a9f4;&@;o;	;o;;i;iÉ;@;@;o;;i;iÉ;iÉ[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iÑ;@;@;o;;i;iÑ;iÑo;#	;o;'	;0;({	;)i;*iõ;+i;,iÂ;@;-"#039be5;&@;o;	;o;;i;iÑ;@;@;o;;i;iÑ;iÑ[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iÖ;@;@;o;;i;iÖ;iÖo;#	;o;'	;0;({	;)i;*ià;+i;,i—;@;-"#0288d1;&@;o;	;o;;i;iÖ;@;@;o;;i;iÖ;iÖ[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iÜ;@;@;o;;i;iÜ;iÜo;#	;o;'	;0;({	;)i;*i|;+i;,iΩ;@;-"#0277bd;&@;o;	;o;;i;iÜ;@;@;o;;i;iÜ;iÜ[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iá;@;@;o;;i;iá;iáo;#	;o;'	;0;({	;)i;*i\;+i;,iõ;@;-"#01579b;&@;o;	;o;;i;iá;@;@;o;;i;iá;iá[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;ià;@;@;o;;i;ià;iào;#	;o;'	;0;({	;)iÄ;*iÿ;+i;,iˇ;@;-"#80d8ff;&@;o;	;o;;i;ià;@;@;o;;i;ià;ià[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iâ;@;@;o;;i;iâ;iâo;#	;o;'	;0;({	;)iE;*iƒ;+i;,iˇ;@;-"#40c4ff;&@;o;	;o;;i;iâ;@;@;o;;i;iâ;iâ[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iä;@;@;o;;i;iä;iäo;#	;o;'	;0;({	;)i ;*i∞;+i;,iˇ;@;-"#00b0ff;&@;o;	;o;;i;iä;@;@;o;;i;iä;iä[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iã;@;@;o;;i;iã;ião;#	;o;'	;0;({	;)i ;*ië;+i;,iÍ;@;-"#0091ea;&@;o;	;o;;i;iã;@;@;o;;i;iã;iã;@;&@;o;	;o;;i;i};@;@;o;;i;i~;i}o;;"	cyan;[ ;0;@;0;o;	;o;;i;ié;@;@;o;;i;iù;ié; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;iè;@;@;o;;i;iè;ièo;#	;o;'	;0;({	;)i‡;*i˜;+i;,i˙;@;-"#e0f7fa;&@;o;	;o;;i;iè;@;@;o;;i;iè;iè[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;iê;@;@;o;;i;iê;iêo;#	;o;'	;0;({	;)i≤;*iÎ;+i;,iÚ;@;-"#b2ebf2;&@;o;	;o;;i;iê;@;@;o;;i;iê;iê[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;ië;@;@;o;;i;ië;iëo;#	;o;'	;0;({	;)iÄ;*iﬁ;+i;,iÍ;@;-"#80deea;&@;o;	;o;;i;ië;@;@;o;;i;ië;ië[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;ií;@;@;o;;i;ií;iío;#	;o;'	;0;({	;)iR;*i–;+i;,i·;@;-"#4dd0e1;&@;o;	;o;;i;ií;@;@;o;;i;ií;ií[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iì;@;@;o;;i;iì;iìo;#	;o;'	;0;({	;)i+;*i∆;+i;,i⁄;@;-"#26c6da;&@;o;	;o;;i;iì;@;@;o;;i;iì;iì[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iî;@;@;o;;i;iî;iîo;#	;o;'	;0;({	;)i ;*iº;+i;,i‘;@;-"#00bcd4;&@;o;	;o;;i;iî;@;@;o;;i;iî;iî[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iï;@;@;o;;i;iï;iïo;#	;o;'	;0;({	;)i ;*i¨;+i;,i¡;@;-"#00acc1;&@;o;	;o;;i;iï;@;@;o;;i;iï;iï[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iñ;@;@;o;;i;iñ;iño;#	;o;'	;0;({	;)i ;*ió;+i;,iß;@;-"#0097a7;&@;o;	;o;;i;iñ;@;@;o;;i;iñ;iñ[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;ió;@;@;o;;i;ió;ióo;#	;o;'	;0;({	;)i ;*iÉ;+i;,iè;@;-"#00838f;&@;o;	;o;;i;ió;@;@;o;;i;ió;ió[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iò;@;@;o;;i;iò;iòo;#	;o;'	;0;({	;)i ;*ie;+i;,ii;@;-"#006064;&@;o;	;o;;i;iò;@;@;o;;i;iò;iò[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iô;@;@;o;;i;iô;iôo;#	;o;'	;0;({	;)iÑ;*iˇ;+i;,iˇ;@;-"#84ffff;&@;o;	;o;;i;iô;@;@;o;;i;iô;iô[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iö;@;@;o;;i;iö;iöo;#	;o;'	;0;({	;)i;*iˇ;+i;,iˇ;@;-"#18ffff;&@;o;	;o;;i;iö;@;@;o;;i;iö;iö[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iõ;@;@;o;;i;iõ;iõo;#	;o;'	;0;({	;)i ;*iÂ;+i;,iˇ;@;-"#00e5ff;&@;o;	;o;;i;iõ;@;@;o;;i;iõ;iõ[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iú;@;@;o;;i;iú;iúo;#	;o;'	;0;({	;)i ;*i∏;+i;,i‘;@;-"#00b8d4;&@;o;	;o;;i;iú;@;@;o;;i;iú;iú;@;&@;o;	;o;;i;ié;@;@;o;;i;iè;iéo;;"	teal;[ ;0;@;0;o;	;o;;i;iü;@;@;o;;i;iÆ;iü; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i†;@;@;o;;i;i†;i†o;#	;o;'	;0;({	;)i‡;*iÚ;+i;,iÒ;@;-"#e0f2f1;&@;o;	;o;;i;i†;@;@;o;;i;i†;i†[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i°;@;@;o;;i;i°;i°o;#	;o;'	;0;({	;)i≤;*iﬂ;+i;,i€;@;-"#b2dfdb;&@;o;	;o;;i;i°;@;@;o;;i;i°;i°[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i¢;@;@;o;;i;i¢;i¢o;#	;o;'	;0;({	;)iÄ;*iÀ;+i;,iƒ;@;-"#80cbc4;&@;o;	;o;;i;i¢;@;@;o;;i;i¢;i¢[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i£;@;@;o;;i;i£;i£o;#	;o;'	;0;({	;)iR;*i∂;+i;,i¨;@;-"#4db6ac;&@;o;	;o;;i;i£;@;@;o;;i;i£;i£[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i§;@;@;o;;i;i§;i§o;#	;o;'	;0;({	;)i+;*i¶;+i;,iö;@;-"#26a69a;&@;o;	;o;;i;i§;@;@;o;;i;i§;i§[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i•;@;@;o;;i;i•;i•o;#	;o;'	;0;({	;)i ;*iñ;+i;,ià;@;-"#009688;&@;o;	;o;;i;i•;@;@;o;;i;i•;i•[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i¶;@;@;o;;i;i¶;i¶o;#	;o;'	;0;({	;)i ;*iâ;+i;,i{;@;-"#00897b;&@;o;	;o;;i;i¶;@;@;o;;i;i¶;i¶[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iß;@;@;o;;i;iß;ißo;#	;o;'	;0;({	;)i ;*i~;+i;,ip;@;-"#00796b;&@;o;	;o;;i;iß;@;@;o;;i;iß;iß[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i®;@;@;o;;i;i®;i®o;#	;o;'	;0;({	;)i ;*in;+i;,ia;@;-"#00695c;&@;o;	;o;;i;i®;@;@;o;;i;i®;i®[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i©;@;@;o;;i;i©;i©o;#	;o;'	;0;({	;)i ;*iR;+i;,iE;@;-"#004d40;&@;o;	;o;;i;i©;@;@;o;;i;i©;i©[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i™;@;@;o;;i;i™;i™o;#	;o;'	;0;({	;)iß;*iˇ;+i;,iÎ;@;-"#a7ffeb;&@;o;	;o;;i;i™;@;@;o;;i;i™;i™[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i´;@;@;o;;i;i´;i´o;#	;o;'	;0;({	;)ii;*iˇ;+i;,i⁄;@;-"#64ffda;&@;o;	;o;;i;i´;@;@;o;;i;i´;i´[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i¨;@;@;o;;i;i¨;i¨o;#	;o;'	;0;({	;)i";*iÈ;+i;,i∂;@;-"#1de9b6;&@;o;	;o;;i;i¨;@;@;o;;i;i¨;i¨[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i≠;@;@;o;;i;i≠;i≠o;#	;o;'	;0;({	;)i ;*iø;+i;,i•;@;-"#00bfa5;&@;o;	;o;;i;i≠;@;@;o;;i;i≠;i≠;@;&@;o;	;o;;i;iü;@;@;o;;i;i†;iüo;;"
+green;[ ;0;@;0;o;	;o;;i;i∞;@;@;o;;i;iø;i∞; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i±;@;@;o;;i;i±;i±o;#	;o;'	;0;({	;)iË;*iı;+i;,iÈ;@;-"#E8F5E9;&@;o;	;o;;i;i±;@;@;o;;i;i±;i±[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i≤;@;@;o;;i;i≤;i≤o;#	;o;'	;0;({	;)i»;*iÊ;+i;,i…;@;-"#C8E6C9;&@;o;	;o;;i;i≤;@;@;o;;i;i≤;i≤[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i≥;@;@;o;;i;i≥;i≥o;#	;o;'	;0;({	;)i•;*i÷;+i;,iß;@;-"#A5D6A7;&@;o;	;o;;i;i≥;@;@;o;;i;i≥;i≥[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i¥;@;@;o;;i;i¥;i¥o;#	;o;'	;0;({	;)iÅ;*i«;+i;,iÑ;@;-"#81C784;&@;o;	;o;;i;i¥;@;@;o;;i;i¥;i¥[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iµ;@;@;o;;i;iµ;iµo;#	;o;'	;0;({	;)ik;*iª;+i;,io;@;-"#66BB6A;&@;o;	;o;;i;iµ;@;@;o;;i;iµ;iµ[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i∂;@;@;o;;i;i∂;i∂o;#	;o;'	;0;({	;)iQ;*iØ;+i;,iU;@;-"#4CAF50;&@;o;	;o;;i;i∂;@;@;o;;i;i∂;i∂[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i∑;@;@;o;;i;i∑;i∑o;#	;o;'	;0;({	;)iH;*i†;+i;,iL;@;-"#43A047;&@;o;	;o;;i;i∑;@;@;o;;i;i∑;i∑[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i∏;@;@;o;;i;i∏;i∏o;#	;o;'	;0;({	;)i=;*ié;+i;,iA;@;-"#388E3C;&@;o;	;o;;i;i∏;@;@;o;;i;i∏;i∏[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iπ;@;@;o;;i;iπ;iπo;#	;o;'	;0;({	;)i3;*i};+i;,i7;@;-"#2E7D32;&@;o;	;o;;i;iπ;@;@;o;;i;iπ;iπ[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i∫;@;@;o;;i;i∫;i∫o;#	;o;'	;0;({	;)i ;*ic;+i;,i%;@;-"#1B5E20;&@;o;	;o;;i;i∫;@;@;o;;i;i∫;i∫[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iª;@;@;o;;i;iª;iªo;#	;o;'	;0;({	;)iπ;*iˆ;+i;,i ;@;-"#B9F6CA;&@;o;	;o;;i;iª;@;@;o;;i;iª;iª[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iº;@;@;o;;i;iº;iºo;#	;o;'	;0;({	;)in;*i;+i;,iÆ;@;-"#69F0AE;&@;o;	;o;;i;iº;@;@;o;;i;iº;iº[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iΩ;@;@;o;;i;iΩ;iΩo;#	;o;'	;0;({	;)i ;*iÊ;+i;,i{;@;-"#00E676;&@;o;	;o;;i;iΩ;@;@;o;;i;iΩ;iΩ[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iæ;@;@;o;;i;iæ;iæo;#	;o;'	;0;({	;)i ;*i»;+i;,iX;@;-"#00C853;&@;o;	;o;;i;iæ;@;@;o;;i;iæ;iæ;@;&@;o;	;o;;i;i∞;@;@;o;;i;i±;i∞o;;"light-green;[ ;0;@;0;o;	;o;;i;i¡;@;@;o;;i;i–;i¡; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i¬;@;@;o;;i;i¬;i¬o;#	;o;'	;0;({	;)iÒ;*i¯;+i;,iÈ;@;-"#f1f8e9;&@;o;	;o;;i;i¬;@;@;o;;i;i¬;i¬[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i√;@;@;o;;i;i√;i√o;#	;o;'	;0;({	;)i‹;*iÌ;+i;,i»;@;-"#dcedc8;&@;o;	;o;;i;i√;@;@;o;;i;i√;i√[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iƒ;@;@;o;;i;iƒ;iƒo;#	;o;'	;0;({	;)i≈;*i·;+i;,i•;@;-"#c5e1a5;&@;o;	;o;;i;iƒ;@;@;o;;i;iƒ;iƒ[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i≈;@;@;o;;i;i≈;i≈o;#	;o;'	;0;({	;)iÆ;*i’;+i;,iÅ;@;-"#aed581;&@;o;	;o;;i;i≈;@;@;o;;i;i≈;i≈[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i∆;@;@;o;;i;i∆;i∆o;#	;o;'	;0;({	;)iú;*iÃ;+i;,ij;@;-"#9ccc65;&@;o;	;o;;i;i∆;@;@;o;;i;i∆;i∆[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i«;@;@;o;;i;i«;i«o;#	;o;'	;0;({	;)iã;*i√;+i;,iO;@;-"#8bc34a;&@;o;	;o;;i;i«;@;@;o;;i;i«;i«[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i»;@;@;o;;i;i»;i»o;#	;o;'	;0;({	;)i|;*i≥;+i;,iG;@;-"#7cb342;&@;o;	;o;;i;i»;@;@;o;;i;i»;i»[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i…;@;@;o;;i;i…;i…o;#	;o;'	;0;({	;)im;*iü;+i;,i=;@;-"#689f38;&@;o;	;o;;i;i…;@;@;o;;i;i…;i…[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i ;@;@;o;;i;i ;i o;#	;o;'	;0;({	;)iZ;*iã;+i;,i4;@;-"#558b2f;&@;o;	;o;;i;i ;@;@;o;;i;i ;i [o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iÀ;@;@;o;;i;iÀ;iÀo;#	;o;'	;0;({	;)i8;*in;+i;,i#;@;-"#33691e;&@;o;	;o;;i;iÀ;@;@;o;;i;iÀ;iÀ[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iÃ;@;@;o;;i;iÃ;iÃo;#	;o;'	;0;({	;)iÃ;*iˇ;+i;,iê;@;-"#ccff90;&@;o;	;o;;i;iÃ;@;@;o;;i;iÃ;iÃ[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iÕ;@;@;o;;i;iÕ;iÕo;#	;o;'	;0;({	;)i≤;*iˇ;+i;,i^;@;-"#b2ff59;&@;o;	;o;;i;iÕ;@;@;o;;i;iÕ;iÕ[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iŒ;@;@;o;;i;iŒ;iŒo;#	;o;'	;0;({	;)i{;*iˇ;+i;,i;@;-"#76ff03;&@;o;	;o;;i;iŒ;@;@;o;;i;iŒ;iŒ[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iœ;@;@;o;;i;iœ;iœo;#	;o;'	;0;({	;)ii;*i›;+i;,i;@;-"#64dd17;&@;o;	;o;;i;iœ;@;@;o;;i;iœ;iœ;@;&@;o;	;o;;i;i¡;@;@;o;;i;i¬;i¡o;;"	lime;[ ;0;@;0;o;	;o;;i;i“;@;@;o;;i;i·;i“; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i”;@;@;o;;i;i”;i”o;#	;o;'	;0;({	;)i˘;*i˚;+i;,iÁ;@;-"#f9fbe7;&@;o;	;o;;i;i”;@;@;o;;i;i”;i”[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i‘;@;@;o;;i;i‘;i‘o;#	;o;'	;0;({	;)i;*iÙ;+i;,i√;@;-"#f0f4c3;&@;o;	;o;;i;i‘;@;@;o;;i;i‘;i‘[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i’;@;@;o;;i;i’;i’o;#	;o;'	;0;({	;)iÊ;*iÓ;+i;,iú;@;-"#e6ee9c;&@;o;	;o;;i;i’;@;@;o;;i;i’;i’[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i÷;@;@;o;;i;i÷;i÷o;#	;o;'	;0;({	;)i‹;*iÁ;+i;,iz;@;-"#dce775;&@;o;	;o;;i;i÷;@;@;o;;i;i÷;i÷[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i◊;@;@;o;;i;i◊;i◊o;#	;o;'	;0;({	;)i‘;*i·;+i;,i\;@;-"#d4e157;&@;o;	;o;;i;i◊;@;@;o;;i;i◊;i◊[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iÿ;@;@;o;;i;iÿ;iÿo;#	;o;'	;0;({	;)iÕ;*i‹;+i;,i>;@;-"#cddc39;&@;o;	;o;;i;iÿ;@;@;o;;i;iÿ;iÿ[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iŸ;@;@;o;;i;iŸ;iŸo;#	;o;'	;0;({	;)i¿;*i ;+i;,i8;@;-"#c0ca33;&@;o;	;o;;i;iŸ;@;@;o;;i;iŸ;iŸ[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i⁄;@;@;o;;i;i⁄;i⁄o;#	;o;'	;0;({	;)iØ;*i¥;+i;,i0;@;-"#afb42b;&@;o;	;o;;i;i⁄;@;@;o;;i;i⁄;i⁄[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i€;@;@;o;;i;i€;i€o;#	;o;'	;0;({	;)iû;*iù;+i;,i);@;-"#9e9d24;&@;o;	;o;;i;i€;@;@;o;;i;i€;i€[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i‹;@;@;o;;i;i‹;i‹o;#	;o;'	;0;({	;)iÇ;*i|;+i;,i;@;-"#827717;&@;o;	;o;;i;i‹;@;@;o;;i;i‹;i‹[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i›;@;@;o;;i;i›;i›o;#	;o;'	;0;({	;)iÙ;*iˇ;+i;,iÅ;@;-"#f4ff81;&@;o;	;o;;i;i›;@;@;o;;i;i›;i›[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iﬁ;@;@;o;;i;iﬁ;iﬁo;#	;o;'	;0;({	;)iÓ;*iˇ;+i;,iF;@;-"#eeff41;&@;o;	;o;;i;iﬁ;@;@;o;;i;iﬁ;iﬁ[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;iﬂ;@;@;o;;i;iﬂ;iﬂo;#	;o;'	;0;({	;)i∆;*iˇ;+i;,i ;@;-"#c6ff00;&@;o;	;o;;i;iﬂ;@;@;o;;i;iﬂ;iﬂ[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i‡;@;@;o;;i;i‡;i‡o;#	;o;'	;0;({	;)iÆ;*iÍ;+i;,i ;@;-"#aeea00;&@;o;	;o;;i;i‡;@;@;o;;i;i‡;i‡;@;&@;o;	;o;;i;i“;@;@;o;;i;i”;i“o;;"yellow;[ ;0;@;0;o;	;o;;i;i„;@;@;o;;i;iÚ;i„; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i‰;@;@;o;;i;i‰;i‰o;#	;o;'	;0;({	;)iˇ;*i˝;+i;,iÁ;@;-"#fffde7;&@;o;	;o;;i;i‰;@;@;o;;i;i‰;i‰[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;iÂ;@;@;o;;i;iÂ;iÂo;#	;o;'	;0;({	;)iˇ;*i˘;+i;,iƒ;@;-"#fff9c4;&@;o;	;o;;i;iÂ;@;@;o;;i;iÂ;iÂ[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iÊ;@;@;o;;i;iÊ;iÊo;#	;o;'	;0;({	;)iˇ;*iı;+i;,iù;@;-"#fff59d;&@;o;	;o;;i;iÊ;@;@;o;;i;iÊ;iÊ[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iÁ;@;@;o;;i;iÁ;iÁo;#	;o;'	;0;({	;)iˇ;*iÒ;+i;,i{;@;-"#fff176;&@;o;	;o;;i;iÁ;@;@;o;;i;iÁ;iÁ[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iË;@;@;o;;i;iË;iËo;#	;o;'	;0;({	;)iˇ;*iÓ;+i;,i];@;-"#ffee58;&@;o;	;o;;i;iË;@;@;o;;i;iË;iË[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iÈ;@;@;o;;i;iÈ;iÈo;#	;o;'	;0;({	;)iˇ;*iÎ;+i;,i@;@;-"#ffeb3b;&@;o;	;o;;i;iÈ;@;@;o;;i;iÈ;iÈ[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iÍ;@;@;o;;i;iÍ;iÍo;#	;o;'	;0;({	;)i˝;*iÿ;+i;,i:;@;-"#fdd835;&@;o;	;o;;i;iÍ;@;@;o;;i;iÍ;iÍ[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iÎ;@;@;o;;i;iÎ;iÎo;#	;o;'	;0;({	;)i˚;*i¿;+i;,i2;@;-"#fbc02d;&@;o;	;o;;i;iÎ;@;@;o;;i;iÎ;iÎ[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iÏ;@;@;o;;i;iÏ;iÏo;#	;o;'	;0;({	;)i˘;*i®;+i;,i*;@;-"#f9a825;&@;o;	;o;;i;iÏ;@;@;o;;i;iÏ;iÏ[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iÌ;@;@;o;;i;iÌ;iÌo;#	;o;'	;0;({	;)iı;*i;+i;,i;@;-"#f57f17;&@;o;	;o;;i;iÌ;@;@;o;;i;iÌ;iÌ[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iÓ;@;@;o;;i;iÓ;iÓo;#	;o;'	;0;({	;)iˇ;*iˇ;+i;,iç;@;-"#ffff8d;&@;o;	;o;;i;iÓ;@;@;o;;i;iÓ;iÓ[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;iÔ;@;@;o;;i;iÔ;iÔo;#	;o;'	;0;({	;)iˇ;*iˇ;+i;,i ;@;-"#ffff00;&@;o;	;o;;i;iÔ;@;@;o;;i;iÔ;iÔ[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÍ;+i;,i ;@;-"#ffea00;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;iÒ;@;@;o;;i;iÒ;iÒo;#	;o;'	;0;({	;)iˇ;*i÷;+i;,i ;@;-"#ffd600;&@;o;	;o;;i;iÒ;@;@;o;;i;iÒ;iÒ;@;&@;o;	;o;;i;i„;@;@;o;;i;i‰;i„o;;"
+amber;[ ;0;@;0;o;	;o;;i;iÙ;@;@;o;;i;i;iÙ; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;iı;@;@;o;;i;iı;iıo;#	;o;'	;0;({	;)iˇ;*i¯;+i;,i·;@;-"#fff8e1;&@;o;	;o;;i;iı;@;@;o;;i;iı;iı[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;iˆ;@;@;o;;i;iˆ;iˆo;#	;o;'	;0;({	;)iˇ;*iÏ;+i;,i≥;@;-"#ffecb3;&@;o;	;o;;i;iˆ;@;@;o;;i;iˆ;iˆ[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i˜;@;@;o;;i;i˜;i˜o;#	;o;'	;0;({	;)iˇ;*i‡;+i;,iÇ;@;-"#ffe082;&@;o;	;o;;i;i˜;@;@;o;;i;i˜;i˜[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i¯;@;@;o;;i;i¯;i¯o;#	;o;'	;0;({	;)iˇ;*i’;+i;,iT;@;-"#ffd54f;&@;o;	;o;;i;i¯;@;@;o;;i;i¯;i¯[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i˘;@;@;o;;i;i˘;i˘o;#	;o;'	;0;({	;)iˇ;*i ;+i;,i-;@;-"#ffca28;&@;o;	;o;;i;i˘;@;@;o;;i;i˘;i˘[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i˙;@;@;o;;i;i˙;i˙o;#	;o;'	;0;({	;)iˇ;*i¡;+i;,i;@;-"#ffc107;&@;o;	;o;;i;i˙;@;@;o;;i;i˙;i˙[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i˚;@;@;o;;i;i˚;i˚o;#	;o;'	;0;({	;)iˇ;*i≥;+i;,i ;@;-"#ffb300;&@;o;	;o;;i;i˚;@;@;o;;i;i˚;i˚[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i¸;@;@;o;;i;i¸;i¸o;#	;o;'	;0;({	;)iˇ;*i†;+i;,i ;@;-"#ffa000;&@;o;	;o;;i;i¸;@;@;o;;i;i¸;i¸[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i˝;@;@;o;;i;i˝;i˝o;#	;o;'	;0;({	;)iˇ;*iè;+i;,i ;@;-"#ff8f00;&@;o;	;o;;i;i˝;@;@;o;;i;i˝;i˝[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i˛;@;@;o;;i;i˛;i˛o;#	;o;'	;0;({	;)iˇ;*it;+i;,i ;@;-"#ff6f00;&@;o;	;o;;i;i˛;@;@;o;;i;i˛;i˛[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;iˇ;@;@;o;;i;iˇ;iˇo;#	;o;'	;0;({	;)iˇ;*iÂ;+i;,i;@;-"#ffe57f;&@;o;	;o;;i;iˇ;@;@;o;;i;iˇ;iˇ[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i ;@;@;o;;i;i ;i o;#	;o;'	;0;({	;)iˇ;*i◊;+i;,iE;@;-"#ffd740;&@;o;	;o;;i;i ;@;@;o;;i;i ;i [o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iƒ;+i;,i ;@;-"#ffc400;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i´;+i;,i ;@;-"#ffab00;&@;o;	;o;;i;i;@;@;o;;i;i;i;@;&@;o;	;o;;i;iÙ;@;@;o;;i;iı;iÙo;;"orange;[ ;0;@;0;o;	;o;;i;i;@;@;o;;i;i;i; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÛ;+i;,i‡;@;-"#fff3e0;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i‡;+i;,i≤;@;-"#ffe0b2;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÃ;+i;,iÄ;@;-"#ffcc80;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i	;@;@;o;;i;i	;i	o;#	;o;'	;0;({	;)iˇ;*i∑;+i;,iR;@;-"#ffb74d;&@;o;	;o;;i;i	;@;@;o;;i;i	;i	[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i
+;@;@;o;;i;i
+;i
+o;#	;o;'	;0;({	;)iˇ;*iß;+i;,i+;@;-"#ffa726;&@;o;	;o;;i;i
+;@;@;o;;i;i
+;i
+[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iò;+i;,i ;@;-"#ff9800;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i˚;*iå;+i;,i ;@;-"#fb8c00;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iı;*i|;+i;,i ;@;-"#f57c00;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÔ;*iq;+i;,i ;@;-"#ef6c00;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÊ;*iV;+i;,i ;@;-"#e65100;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i—;+i;,iÄ;@;-"#ffd180;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i´;+i;,iE;@;-"#ffab40;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*ië;+i;,i ;@;-"#ff9100;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*ir;+i;,i ;@;-"#ff6d00;&@;o;	;o;;i;i;@;@;o;;i;i;i;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;;"deep-orange;[ ;0;@;0;o;	;o;;i;i;@;@;o;;i;i%;i; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)i˚;*iÈ;+i;,iÁ;@;-"#fbe9e7;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iÃ;+i;,iº;@;-"#ffccbc;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i´;+i;,ië;@;-"#ffab91;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iä;+i;,ij;@;-"#ff8a65;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*iu;+i;,iH;@;-"#ff7043;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iˇ;*i\;+i;,i';@;-"#ff5722;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÙ;*iV;+i;,i#;@;-"#f4511e;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÊ;*iO;+i;,i;@;-"#e64a19;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;#	;o;'	;0;({	;)iÿ;*iH;+i;,i;@;-"#d84315;&@;o;	;o;;i;i;@;@;o;;i;i;i[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i ;@;@;o;;i;i ;i o;#	;o;'	;0;({	;)iø;*i;;+i;,i;@;-"#bf360c;&@;o;	;o;;i;i ;@;@;o;;i;i ;i [o;#	;o;$;	;%;"accent-1;@;&@;o;	;o;;i;i!;@;@;o;;i;i!;i!o;#	;o;'	;0;({	;)iˇ;*iû;+i;,iÄ;@;-"#ff9e80;&@;o;	;o;;i;i!;@;@;o;;i;i!;i![o;#	;o;$;	;%;"accent-2;@;&@;o;	;o;;i;i";@;@;o;;i;i";i"o;#	;o;'	;0;({	;)iˇ;*is;+i;,iE;@;-"#ff6e40;&@;o;	;o;;i;i";@;@;o;;i;i";i"[o;#	;o;$;	;%;"accent-3;@;&@;o;	;o;;i;i#;@;@;o;;i;i#;i#o;#	;o;'	;0;({	;)iˇ;*iB;+i;,i ;@;-"#ff3d00;&@;o;	;o;;i;i#;@;@;o;;i;i#;i#[o;#	;o;$;	;%;"accent-4;@;&@;o;	;o;;i;i$;@;@;o;;i;i$;i$o;#	;o;'	;0;({	;)i›;*i1;+i;,i ;@;-"#dd2c00;&@;o;	;o;;i;i$;@;@;o;;i;i$;i$;@;&@;o;	;o;;i;i;@;@;o;;i;i;io;;"
+brown;[ ;0;@;0;o;	;o;;i;i';@;@;o;;i;i2;i'; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i(;@;@;o;;i;i(;i(o;#	;o;'	;0;({	;)iÔ;*iÎ;+i;,iÈ;@;-"#efebe9;&@;o;	;o;;i;i(;@;@;o;;i;i(;i([o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i);@;@;o;;i;i);i)o;#	;o;'	;0;({	;)i◊;*iÃ;+i;,i»;@;-"#d7ccc8;&@;o;	;o;;i;i);@;@;o;;i;i);i)[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i*;@;@;o;;i;i*;i*o;#	;o;'	;0;({	;)iº;*i™;+i;,i§;@;-"#bcaaa4;&@;o;	;o;;i;i*;@;@;o;;i;i*;i*[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i+;@;@;o;;i;i+;i+o;#	;o;'	;0;({	;)i°;*ià;+i;,i;@;-"#a1887f;&@;o;	;o;;i;i+;@;@;o;;i;i+;i+[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i,;@;@;o;;i;i,;i,o;#	;o;'	;0;({	;)iç;*is;+i;,ih;@;-"#8d6e63;&@;o;	;o;;i;i,;@;@;o;;i;i,;i,[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i-;@;@;o;;i;i-;i-o;#	;o;'	;0;({	;)i~;*iZ;+i;,iM;@;-"#795548;&@;o;	;o;;i;i-;@;@;o;;i;i-;i-[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i.;@;@;o;;i;i.;i.o;#	;o;'	;0;({	;)ir;*iQ;+i;,iF;@;-"#6d4c41;&@;o;	;o;;i;i.;@;@;o;;i;i.;i.[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i/;@;@;o;;i;i/;i/o;#	;o;'	;0;({	;)ib;*iE;+i;,i<;@;-"#5d4037;&@;o;	;o;;i;i/;@;@;o;;i;i/;i/[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i0;@;@;o;;i;i0;i0o;#	;o;'	;0;({	;)iS;*i9;+i;,i3;@;-"#4e342e;&@;o;	;o;;i;i0;@;@;o;;i;i0;i0[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i1;@;@;o;;i;i1;i1o;#	;o;'	;0;({	;)iC;*i,;+i;,i(;@;-"#3e2723;&@;o;	;o;;i;i1;@;@;o;;i;i1;i1;@;&@;o;	;o;;i;i';@;@;o;;i;i(;i'o;;"blue-grey;[ ;0;@;0;o;	;o;;i;i4;@;@;o;;i;i?;i4; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;i5;@;@;o;;i;i5;i5o;#	;o;'	;0;({	;)iÏ;*iÔ;+i;,iÒ;@;-"#eceff1;&@;o;	;o;;i;i5;@;@;o;;i;i5;i5[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;i6;@;@;o;;i;i6;i6o;#	;o;'	;0;({	;)iœ;*iÿ;+i;,i‹;@;-"#cfd8dc;&@;o;	;o;;i;i6;@;@;o;;i;i6;i6[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;i7;@;@;o;;i;i7;i7o;#	;o;'	;0;({	;)i∞;*iæ;+i;,i≈;@;-"#b0bec5;&@;o;	;o;;i;i7;@;@;o;;i;i7;i7[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;i8;@;@;o;;i;i8;i8o;#	;o;'	;0;({	;)iê;*i§;+i;,iÆ;@;-"#90a4ae;&@;o;	;o;;i;i8;@;@;o;;i;i8;i8[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;i9;@;@;o;;i;i9;i9o;#	;o;'	;0;({	;)i};*iê;+i;,iú;@;-"#78909c;&@;o;	;o;;i;i9;@;@;o;;i;i9;i9[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;i:;@;@;o;;i;i:;i:o;#	;o;'	;0;({	;)ie;*i};+i;,iã;@;-"#607d8b;&@;o;	;o;;i;i:;@;@;o;;i;i:;i:[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;i;;@;@;o;;i;i;;i;o;#	;o;'	;0;({	;)iY;*is;+i;,i;@;-"#546e7a;&@;o;	;o;;i;i;;@;@;o;;i;i;;i;[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;i<;@;@;o;;i;i<;i<o;#	;o;'	;0;({	;)iJ;*i_;+i;,ii;@;-"#455a64;&@;o;	;o;;i;i<;@;@;o;;i;i<;i<[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;i=;@;@;o;;i;i=;i=o;#	;o;'	;0;({	;)i<;*iL;+i;,iT;@;-"#37474f;&@;o;	;o;;i;i=;@;@;o;;i;i=;i=[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;i>;@;@;o;;i;i>;i>o;#	;o;'	;0;({	;)i+;*i7;+i;,i=;@;-"#263238;&@;o;	;o;;i;i>;@;@;o;;i;i>;i>;@;&@;o;	;o;;i;i4;@;@;o;;i;i5;i4o;;"	grey;[ ;0;@;0;o;	;o;;i;iA;@;@;o;;i;iL;iA; o;!
+;"[[o;#	;o;$;	;%;"lighten-5;@;&@;o;	;o;;i;iB;@;@;o;;i;iB;iBo;#	;o;'	;0;({	;)i˙;*i˙;+i;,i˙;@;-"#fafafa;&@;o;	;o;;i;iB;@;@;o;;i;iB;iB[o;#	;o;$;	;%;"lighten-4;@;&@;o;	;o;;i;iC;@;@;o;;i;iC;iCo;#	;o;'	;0;({	;)iı;*iı;+i;,iı;@;-"#f5f5f5;&@;o;	;o;;i;iC;@;@;o;;i;iC;iC[o;#	;o;$;	;%;"lighten-3;@;&@;o;	;o;;i;iD;@;@;o;;i;iD;iDo;#	;o;'	;0;({	;)iÓ;*iÓ;+i;,iÓ;@;-"#eeeeee;&@;o;	;o;;i;iD;@;@;o;;i;iD;iD[o;#	;o;$;	;%;"lighten-2;@;&@;o;	;o;;i;iE;@;@;o;;i;iE;iEo;#	;o;'	;0;({	;)i‡;*i‡;+i;,i‡;@;-"#e0e0e0;&@;o;	;o;;i;iE;@;@;o;;i;iE;iE[o;#	;o;$;	;%;"lighten-1;@;&@;o;	;o;;i;iF;@;@;o;;i;iF;iFo;#	;o;'	;0;({	;)iΩ;*iΩ;+i;,iΩ;@;-"#bdbdbd;&@;o;	;o;;i;iF;@;@;o;;i;iF;iF[o;#	;o;$;	;%;"	base;@;&@;o;	;o;;i;iG;@;@;o;;i;iG;iGo;#	;o;'	;0;({	;)iû;*iû;+i;,iû;@;-"#9e9e9e;&@;o;	;o;;i;iG;@;@;o;;i;iG;iG[o;#	;o;$;	;%;"darken-1;@;&@;o;	;o;;i;iH;@;@;o;;i;iH;iHo;#	;o;'	;0;({	;)iz;*iz;+i;,iz;@;-"#757575;&@;o;	;o;;i;iH;@;@;o;;i;iH;iH[o;#	;o;$;	;%;"darken-2;@;&@;o;	;o;;i;iI;@;@;o;;i;iI;iIo;#	;o;'	;0;({	;)if;*if;+i;,if;@;-"#616161;&@;o;	;o;;i;iI;@;@;o;;i;iI;iI[o;#	;o;$;	;%;"darken-3;@;&@;o;	;o;;i;iJ;@;@;o;;i;iJ;iJo;#	;o;'	;0;({	;)iG;*iG;+i;,iG;@;-"#424242;&@;o;	;o;;i;iJ;@;@;o;;i;iJ;iJ[o;#	;o;$;	;%;"darken-4;@;&@;o;	;o;;i;iK;@;@;o;;i;iK;iKo;#	;o;'	;0;({	;)i&;*i&;+i;,i&;@;-"#212121;&@;o;	;o;;i;iK;@;@;o;;i;iK;iK;@;&@;o;	;o;;i;iA;@;@;o;;i;iB;iAo;;"shades;[ ;0;@;0;o;	;o;;i;iN;@;@;o;;i;iR;iN; o;!
+;"[[o;#	;o;$;	;%;"
+black;@;&@;o;	;o;;i;iO;@;@;o;;i;iO;iOo;#	;o;'	;0;({	;)i ;*i ;+i;,i ;@;-"#000000;&@;o;	;o;;i;iO;@;@;o;;i;iO;iO[o;#	;o;$;	;%;"
+white;@;&@;o;	;o;;i;iP;@;@;o;;i;iP;iPo;#	;o;'	;0;({	;)iˇ;*iˇ;+i;,iˇ;@;-"#FFFFFF;&@;o;	;o;;i;iP;@;@;o;;i;iP;iP[o;#	;o;$;	;%;"transparent;@;&@;o;	;o;;i;iQ;@;@;o;;i;iQ;iQo;#	;o;'	;0;({	;)i ;*i ;+f0;,i ;@;-"transparent;&@;o;	;o;;i;iQ;@;@;o;;i#;iQ;iQ;@;&@;o;	;o;;i;iN;@;@;o;;i;iO;iNo;;"colors;[ ;0;@;0;o;	;o;;i;iT;@;@;o;;i;ij;iT; o;!
+;"[[o;#	;o;$;	;%;"materialize-red;@;&@;o;	;o;;i;iU;@;@;o;;i;iU;iUo:!Sass::Script::Tree::Variable;"materialize-red:@underscored_name"materialize_red;@;&@;o;	;o;;i;iU;@;@;o;;i+;iU;iU[o;#	;o;$;	;%;"red;@;&@;o;	;o;;i;iV;@;@;o;;i;iV;iVo;.;"red;/"red;@;&@;o;	;o;;i;iV;@;@;o;;i;iV;iV[o;#	;o;$;	;%;"	pink;@;&@;o;	;o;;i;iW;@;@;o;;i;iW;iWo;.;"	pink;/"	pink;@;&@;o;	;o;;i;iW;@;@;o;;i;iW;iW[o;#	;o;$;	;%;"purple;@;&@;o;	;o;;i;iX;@;@;o;;i;iX;iXo;.;"purple;/"purple;@;&@;o;	;o;;i;iX;@;@;o;;i;iX;iX[o;#	;o;$;	;%;"deep-purple;@;&@;o;	;o;;i;iY;@;@;o;;i;iY;iYo;.;"deep-purple;/"deep_purple;@;&@;o;	;o;;i;iY;@;@;o;;i#;iY;iY[o;#	;o;$;	;%;"indigo;@;&@;o;	;o;;i;iZ;@;@;o;;i;iZ;iZo;.;"indigo;/"indigo;@;&@;o;	;o;;i;iZ;@;@;o;;i;iZ;iZ[o;#	;o;$;	;%;"	blue;@;&@;o;	;o;;i;i[;@;@;o;;i;i[;i[o;.;"	blue;/"	blue;@;&@;o;	;o;;i;i[;@;@;o;;i;i[;i[[o;#	;o;$;	;%;"light-blue;@;&@;o;	;o;;i;i\;@;@;o;;i;i\;i\o;.;"light-blue;/"light_blue;@;&@;o;	;o;;i;i\;@;@;o;;i!;i\;i\[o;#	;o;$;	;%;"	cyan;@;&@;o;	;o;;i;i];@;@;o;;i;i];i]o;.;"	cyan;/"	cyan;@;&@;o;	;o;;i;i];@;@;o;;i;i];i][o;#	;o;$;	;%;"	teal;@;&@;o;	;o;;i;i^;@;@;o;;i;i^;i^o;.;"	teal;/"	teal;@;&@;o;	;o;;i;i^;@;@;o;;i;i^;i^[o;#	;o;$;	;%;"
+green;@;&@;o;	;o;;i;i_;@;@;o;;i;i_;i_o;.;"
+green;/"
+green;@;&@;o;	;o;;i;i_;@;@;o;;i;i_;i_[o;#	;o;$;	;%;"light-green;@;&@;o;	;o;;i;i`;@;@;o;;i;i`;i`o;.;"light-green;/"light_green;@;&@;o;	;o;;i;i`;@;@;o;;i#;i`;i`[o;#	;o;$;	;%;"	lime;@;&@;o;	;o;;i;ia;@;@;o;;i;ia;iao;.;"	lime;/"	lime;@;&@;o;	;o;;i;ia;@;@;o;;i;ia;ia[o;#	;o;$;	;%;"yellow;@;&@;o;	;o;;i;ib;@;@;o;;i;ib;ibo;.;"yellow;/"yellow;@;&@;o;	;o;;i;ib;@;@;o;;i;ib;ib[o;#	;o;$;	;%;"
+amber;@;&@;o;	;o;;i;ic;@;@;o;;i;ic;ico;.;"
+amber;/"
+amber;@;&@;o;	;o;;i;ic;@;@;o;;i;ic;ic[o;#	;o;$;	;%;"orange;@;&@;o;	;o;;i;id;@;@;o;;i;id;ido;.;"orange;/"orange;@;&@;o;	;o;;i;id;@;@;o;;i;id;id[o;#	;o;$;	;%;"deep-orange;@;&@;o;	;o;;i;ie;@;@;o;;i;ie;ieo;.;"deep-orange;/"deep_orange;@;&@;o;	;o;;i;ie;@;@;o;;i#;ie;ie[o;#	;o;$;	;%;"
+brown;@;&@;o;	;o;;i;if;@;@;o;;i;if;ifo;.;"
+brown;/"
+brown;@;&@;o;	;o;;i;if;@;@;o;;i;if;if[o;#	;o;$;	;%;"blue-grey;@;&@;o;	;o;;i;ig;@;@;o;;i;ig;igo;.;"blue-grey;/"blue_grey;@;&@;o;	;o;;i;ig;@;@;o;;i;ig;ig[o;#	;o;$;	;%;"	grey;@;&@;o;	;o;;i;ih;@;@;o;;i;ih;iho;.;"	grey;/"	grey;@;&@;o;	;o;;i;ih;@;@;o;;i;ih;ih[o;#	;o;$;	;%;"shades;@;&@;o;	;o;;i;ii;@;@;o;;i;ii;iio;.;"shades;/"shades;@;&@;o;	;o;;i;ii;@;@;o;;i;ii;ii;@;&@;o;	;o;;i;iT;@;@;o;;i+;iU;iTo;
+;	;
+;["/* Color Classes */;[ ;@;imo:Sass::Tree::EachNode;[o;0;[u:Sass::Tree::IfNodeﬂ[o:"Sass::Script::Tree::Operation:@operand2o: Sass::Script::Tree::Literal	:@valueo: Sass::Script::Value::String:
+@type:string;"	base:@options{ :@filename"components/_color.scss:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti:
+@lineiq:@importero: Sass::Importers::Filesystem:@real_root"-/Applications/MAMP/htdocs/PrintSpot/sass:
+@root"-/Applications/MAMP/htdocs/PrintSpot/sass:@same_name_warningso:Set:
+@hash{ :
+@file@:@end_poso;;i#;iq;iq;@
+:@operator:eq:@operand1o:!Sass::Script::Tree::Variable:
+@name"color_type:@underscored_name"color_type;@
+;@;o;	;o;;i;iq;@;@;o;;i;iq;iq;@;o;	;@;@;@;o;;i$;iq;iqu:Sass::Tree::IfNode
+[00[o:Sass::Tree::RuleNode:@children[o:Sass::Tree::PropNode:@prop_syntax:new:@valueo:$Sass::Script::Tree::ListLiteral:@elements[o:!Sass::Script::Tree::Variable:
+@name"color_value:@underscored_name"color_value:@options{ :@filename"components/_color.scss:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti :
+@linei{:@importero: Sass::Importers::Filesystem:@real_root"-/Applications/MAMP/htdocs/PrintSpot/sass:
+@root"-/Applications/MAMP/htdocs/PrintSpot/sass:@same_name_warningso:Set:
+@hash{ :
+@file@:@end_poso;;i,;i{;i{o: Sass::Script::Tree::Literal	;
+o: Sass::Script::Value::String:
+@type:identifier;
+"!important;@;@;o;	;o;;i-;i{;@;@; o;;i7;i{;i{;@;@;o;	;o;;i ;i{;@;@; o;;i7;i{;i{:@separator:
+space;["background-color:@name_source_rangeo;	;o;;i;i{;@;@; o;;i;i{;[ ;@:
+@tabsi ;o;	;@%;@;@; o;;i7;i{;i{:@value_source_rangeo;	;o;;i ;i{;@;@; @);@;(i ;o;	;o;;i;iz;@;@; o;;i+;iz:@parsed_rules0;iz:@selector_source_rangeo;	;@-;@;@; o;;i+;iz:@has_childrenT:
+@rule[
+".o:&Sass::Script::Tree::Interpolation:@after0:@originally_textF:	@mido;;"color_name;"color_name;@;@;o;	;o;;i;iz;@;@; o;;i;iz;iz;@:@whitespace_afterF;@:@before0;o;	;o;;i;iz;@;@; o;;i;iz;iz:@whitespace_beforeF:@warn_for_color:warn_for_color".o;.;/0;0F;1o;;"color_type;"color_type;@;@;o;	;o;;i;iz;@;@; o;;i);iz;iz;@;2F;@;30;o;	;o;;i;iz;@;@; o;;i*;iz;iz;4F;5;6" o; ;[o;;;	;
+o;;[o;;"color_value;"color_value;@;@;o;	;o;;i;i~;@;@; o;;i!;i~;i~o;!	;
+o;";#;$;
+"!important;@;@;o;	;o;;i";i~;@;@; o;;i,;i~;i~;@;@;o;	;o;;i;i~;@;@; o;;i,;i~;i~;%;&;["
+color;'o;	;o;;i;i~;@;@; o;;i;i~;[ ;@;(i ;o;	;@`;@;@; o;;i,;i~;i~;)o;	;o;;i;i~;@;@; @d;@;(i ;o;	;o;;i;i};@;@; o;;i5;i};*0;i};+o;	;@h;@;@; o;;i5;i};,T;-[
+".o;.;/0;0F;1o;;"color_name;"color_name;@;@;o;	;o;;i;i};@;@; o;;i;i};i};@;2F;@;30;o;	;o;;i;i};@;@; o;;i;i};i};4F;5;6"-text.text-o;.;/0;0F;1o;;"color_type;"color_type;@;@;o;	;o;;i(;i};@;@; o;;i3;i};i};@;2F;@;30;o;	;o;;i&;i};@;@; o;;i4;i};i};4F;5;6" [o:Sass::Tree::RuleNode:@children[o:Sass::Tree::PropNode:@prop_syntax:new;o:$Sass::Script::Tree::ListLiteral:@elements[o; ;!"color_value;""color_value;@
+;@;o;	;o;;i ;is;@;@;o;;i,;is;iso;	;o;	;
+:identifier;"!important;@
+;@;o;	;o;;i-;is;@;@;o;;i7;is;is;@
+;@;o;	;o;;i ;is;@;@;o;;i7;is;is:@separator:
+space;!["background-color:@name_source_rangeo;	;o;;i;is;@;@;o;;i;is;%[ ;@
+:
+@tabsi ;o;	;@5;@;@;o;;i7;is;is:@value_source_rangeo;	;o;;i ;is;@;@;@9;@
+;/i ;o;	;o;;i;ir;@;@;o;;i;ir:@parsed_rules0;ir:@selector_source_rangeo;	;@=;@;@;o;;i;ir:@has_childrenT:
+@rule[".o:&Sass::Script::Tree::Interpolation:@after0:@originally_textF:	@mido; ;!"color_name;""color_name;@
+;@;o;	;o;;i;ir;@;@;o;;i;ir;ir;@
+:@whitespace_afterF;@:@before0;o;	;o;;i;ir;@;@;o;;i;ir;ir:@whitespace_beforeF:@warn_for_color:warn_for_color" o;$;%[o;&;';(;o;);*[o; ;!"color_value;""color_value;@
+;@;o;	;o;;i;iv;@;@;o;;i!;iv;ivo;	;o;	;
+;+;"!important;@
+;@;o;	;o;;i";iv;@;@;o;;i,;iv;iv;@
+;@;o;	;o;;i;iv;@;@;o;;i,;iv;iv;,;-;!["
+color;.o;	;o;;i;iv;@;@;o;;i;iv;%[ ;@
+;/i ;o;	;@e;@;@;o;;i,;iv;iv;0o;	;o;;i;iv;@;@;@i;@
+;/i ;o;	;o;;i;iu;@;@;o;;i!;iu;10;iu;2o;	;@m;@;@;o;;i!;iu;3T;4[".o;5;60;7F;8o; ;!"color_name;""color_name;@
+;@;o;	;o;;i;iu;@;@;o;;i;iu;iu;@
+;9F;@;:0;o;	;o;;i;iu;@;@;o;;i;iu;iu;;F;<;="
+-text:
+@listo;.;"
+color;/"
+color;@;&@;o;	;o;;i+;ip;@;@;o;;i1;ip;ip;@:
+@vars["color_type"color_value;o;	;o;;i;ip;@;@;o;;i2;ip;ip:@has_childrenT;2o;.;"colors;/"colors;@;&@;o;	;o;;i#;io;@;@;o;;i*;io;io;@;3["color_name"
+color;o;	;o;;i;io;@;@;o;;i+;io;io;4To;
+;	;
+;["/* Shade classes */;[ ;@;iÑo;0;[o:Sass::Tree::RuleNode;[o:Sass::Tree::PropNode:@prop_syntax:new;o:$Sass::Script::Tree::ListLiteral:@elements[o;.;"color_value;/"color_value;@;&@;o;	;o;;i;iá;@;@;o;;i(;iá;iáo;#	;o;$;	:identifier;"!important;@;&@;o;	;o;;i);iá;@;@;o;;i3;iá;iá;@;&@;o;	;o;;i;iá;@;@;o;;i3;iá;iá:@separator:
+space;["background-color:@name_source_rangeo;	;o;;i
+;iá;@;@;o;;i;iá;[ ;@:
+@tabsi ;o;	;@Ú;@;@;o;;i3;iá;iá:@value_source_rangeo;	;o;;i;iá;@;@;@ˆ;@;?i ;o;	;o;;i;iÜ;@;@;o;;i;iÜ:@parsed_rules0;iÜ:@selector_source_rangeo;	;@˙;@;@;o;;i;iÜ;4T:
+@rule[".o:&Sass::Script::Tree::Interpolation:@after0:@originally_textF:	@mido;.;"
+color;/"
+color;@;&@;o;	;o;;i;iÜ;@;@;o;;i;iÜ;iÜ;@:@whitespace_afterF;&@:@before0;o;	;o;;i	;iÜ;@;@;o;;i;iÜ;iÜ:@whitespace_beforeF:@warn_for_color:warn_for_color" o;5;[o;6;7;8;o;9;:[o;.;"color_value;/"color_value;@;&@;o;	;o;;i;iä;@;@;o;;i;iä;iäo;#	;o;$;	;;;"!important;@;&@;o;	;o;;i;iä;@;@;o;;i(;iä;iä;@;&@;o;	;o;;i;iä;@;@;o;;i(;iä;iä;<;=;["
+color;>o;	;o;;i
+;iä;@;@;o;;i;iä;[ ;@;?i ;o;	;@";@;@;o;;i(;iä;iä;@o;	;o;;i;iä;@;@;@&;@;?i ;o;	;o;;i;iâ;@;@;o;;i;iâ;A0;iâ;Bo;	;@*;@;@;o;;i;iâ;4T;C[".o;D;E0;FF;Go;.;"
+color;/"
+color;@;&@;o;	;o;;i;iâ;@;@;o;;i;iâ;iâ;@;HF;&@;I0;o;	;o;;i	;iâ;@;@;o;;i;iâ;iâ;JF;K;L"
+-text;2o;.;"shades;/"shades;@;&@;o;	;o;;i$;iÖ;@;@;o;;i+;iÖ;iÖ;@;3["
+color"color_value;o;	;o;;i;iÖ;@;@;o;;i,;iÖ;iÖ;4To;
+;	;
+;["h/* usage: color("name_of_color", "type_of_color")
+ * to avoid to repeating map-get($colors, ...) */;[ ;@;ièo:Sass::Tree::FunctionNode;"
+color;[u;1#	[o: Sass::Script::Tree::Funcall:@kwarg_splat0:
+@name"map-has-key:@keywordso:Sass::Util::NormalizedMap:	@mapIC:OrderedHash{ :
+@keys[ :@key_strings{ :@options{ :@filename"components/_color.scss:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti:
+@lineiì:@importero: Sass::Importers::Filesystem:@real_root"-/Applications/MAMP/htdocs/PrintSpot/sass:
+@root"-/Applications/MAMP/htdocs/PrintSpot/sass:@same_name_warningso:Set:
+@hash{ :
+@file@:@end_poso;;i(;iì;iì:@splat0:
+@args[o:!Sass::Script::Tree::Variable;"colors:@underscored_name"colors;@;@;o;	;o;;i;iì;@;@;o;;i;iì;iìo;!;"
+color;""
+color;@;@;o;	;o;;i!;iì;@;@;o;;i';iì;iì0[o:Sass::Tree::VariableNode;"curr_color:@children[ :@global0;@:@guarded0;o;	;o;;i;iî;@;@;o;;i/;iî;iî:
+@expro; ;0;"map-get;o;	;
+IC;{ ;[ ;{ ;@;@;o;	;o;;i;iî;@;@;o;;i/;iî;iî;0; [o;!;"colors;""colors;@;@;o;	;o;;i;iî;@;@;o;;i&;iî;iîo;!;"
+color;""
+color;@;@;o;	;o;;i(;iî;@;@;o;;i.;iî;iîu:Sass::Tree::IfNodey[o: Sass::Script::Tree::Funcall:@kwarg_splat0:
+@name"map-has-key:@keywordso:Sass::Util::NormalizedMap:	@mapIC:OrderedHash{ :
+@keys[ :@key_strings{ :@options{ :@filename"components/_color.scss:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti:
+@lineiï:@importero: Sass::Importers::Filesystem:@real_root"-/Applications/MAMP/htdocs/PrintSpot/sass:
+@root"-/Applications/MAMP/htdocs/PrintSpot/sass:@same_name_warningso:Set:
+@hash{ :
+@file@:@end_poso;;i-;iï;iï:@splat0:
+@args[o:!Sass::Script::Tree::Variable;"curr_color:@underscored_name"curr_color;@;@;o;	;o;;i;iï;@;@;o;;i%;iï;iïo;!;"	type;""	type;@;@;o;	;o;;i';iï;@;@;o;;i,;iï;iï0[o:Sass::Tree::ReturnNode
+:@children[ ;@;o;	;o;;i;iñ;@;@;o;;i/;iñ;iñ:
+@expro; ;0;"map-get;o;	;
+IC;{ ;[ ;{ ;@;@;o;	;o;;i;iñ;@;@;o;;i/;iñ;iñ;0; [o;!;"curr_color;""curr_color;@;@;o;	;o;;i;iñ;@;@;o;;i';iñ;iño;!;"	type;""	type;@;@;o;	;o;;i);iñ;@;@;o;;i.;iñ;iño:Sass::Tree::WarnNode
+;[ ;@;o;	;o;;i;iô;@;@;o;;i-;iô;iô; o:,Sass::Script::Tree::StringInterpolation;Eo;#	;o;$;	;%;"` in $colors.;@;&@;o;	;o;;i;iô;@;@;o;;i-;iô;iô;Go;#	;o;$;	;;;"	name;@;&@;o;	;o;;i;iô;@;@;o;;i;iô;iô;@;&@;Io;#	;o;$;	;%;"Unknown `;@;&@;o;	;o;;i;iô;@;@;o;;i;iô;iô;o;	;@e;@;@;o;;i-;iô;iôo:Sass::Tree::ReturnNode
+;[ ;@;o;	;o;;i;iö;@;@;o;;i;iö;iö; o;#	;o:Sass::Script::Value::Null;0;@;&@;o;	;o;;i;iö;@;@;o;;i;iö;iö;@;o;	;o;;i;ií;@;@;o;;i%;ií;ií;4T:@splat0:
+@args[[o;.;"
+color;/"
+color;@;&@;o;	;o;;i;ií;@;@;o;;i;ií;ií0[o;.;"	type;/"	type;@;&@;o;	;o;;i;ií;@;@;o;;i#;ií;ií0;@;o;	;o;;i;i;@;@;o;;i;i;i;4T

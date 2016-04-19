@@ -1,0 +1,221 @@
+section.serviciosIn{
+	.wrapper{
+		 @include wrapp;
+		 @include flexFlow;
+		 padding: 43px 18px;
+		 h2{
+		 	width: 100%;
+		 	text-align: center;
+		 	color: #333;
+		 	font-size: 30px;	
+		 	@include cero;
+		 	font-weight: 700;
+		 	@media (min-width: 520px){
+		 		margin: 30px 0 50px;
+		 	}
+		 }
+		 article{
+		 	margin: 45px 0 54px;
+		 	width: 100%;
+		 	text-align: center;
+            >img{
+            	width: 110px;
+            	margin-bottom: 9px;
+            }
+		 	h3{
+		 		font-size: 20px;
+		 		font-weight: 700;
+		 		margin: 0;
+		 	}
+		 	p{
+		        	margin: 0;
+		        	// font-weight: 700;
+		        }
+		 	@media (min-width: 520px){
+		 		margin: 5px 0 72px;
+		        width: 50%;
+		        p{
+		        	padding: 0 36px;
+		        }
+	 
+		 	}
+		 	@media (min-width: 992px){
+		 		 
+		         p{
+		        	padding: 0 74px;
+		        }
+	 	 
+		 	}
+		 }
+
+		 article:nth-child(2){
+		 	 h3{
+		 		color: $pink;
+		 	  }
+		 	  span{
+		 	  	background: $pink;
+		 	  }
+		 	  p{
+		 	  	a{
+		 	  		color: $pink;
+		 	  		font-weight: 700;
+		 	  		text-decoration: underline;
+		 	  	}
+		 	  }
+
+		 }
+		 article:nth-child(3){
+		 	 h3{
+		 		color: $orange;
+		 	  }
+		 	  span{
+		 	  	background: $orange;
+		 	  }
+		 	  p{
+		 	  	a{
+		 	  		color: $orange;
+		 	  		font-weight: 700;
+		 	  		text-decoration: underline;
+		 	  	}
+		 	  }
+
+		 }
+		 article:nth-child(4){
+		 	 h3{
+		 		color: $yew;
+		 	  }
+		 	  span{
+		 	  	background: $yew;
+		 	  }
+		 	   p{
+		 	  	a{
+		 	  		color: $yew;
+		 	  		font-weight: 700;
+		 	  		text-decoration: underline;
+		 	  	}
+		 	  }
+
+		 }
+		 article:nth-child(5){
+		 	 h3{
+		 		color: $aqua;
+		 	  }
+		 	  span{
+		 	  	background: $aqua;
+		 	  }
+		 	   p{
+		 	  	a{
+		 	  		color: $aqua;
+		 	  		font-weight: 700;
+		 	  		text-decoration: underline;
+		 	  	}
+		 	  }
+
+		 }
+
+	}
+}
+section.fullBanner{
+	width: 100%;
+	height: 410px;
+	background: url(assets/images/bg-fullBanner.jpg) center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+    height: 733px;
+    position: relative;
+	.wrapper{
+		@include wrappSmall;
+		 @include flexFlow;
+		 padding: 63px 18px;
+		 color: white;
+		 h2{
+		 	text-align: center;
+		 	width: 100%;
+		 	@include cero;
+		 	font-weight: 700;
+		 	font-size: 24px;
+		 }
+		 article{
+		 	width: 100%;
+		 	text-align: center;
+		 	position: relative;
+		 	height: 120px;
+		 	margin-top: 24px; 
+		 	img{
+		 		@include centerAbsolute2;
+		 		top: 5px;
+		 	}
+		 	p{
+		 		font-size: 16px;
+		 		font-weight: 700;
+		 		@include centerAbsolute2;
+		 		top: 96px;
+		 		br{
+		 			display: none;
+		 		}
+		 	}
+
+		 }
+		 button{
+
+		 	background-color: rgba(255, 255, 255, 0);
+		    border: 4px solid white;
+		    border-radius: 39px;
+		    font-size: 15px;
+		    height: 44px;
+		    width: 160px;
+		    bottom: 63px;
+		    transition: opacity .2s;
+		    @include centerAbsolute2;
+		    &:hover{
+		    	opacity: .6;
+		    }
+		 }
+
+	}
+	@media (min-width: 520px){
+		height: 482px;
+		.wrapper{
+			article{
+				margin-top: 57px; 
+				width: 33.3%;
+				p{
+					margin: 0 4px;
+				}
+			}
+	  }	
+	}
+	@media (min-width: 992px){
+		height: 410px;
+		.wrapper{
+			article{
+				img{
+					right: inherit;
+				}
+				p{
+					
+					font-size: 18px;
+					text-align: left;
+					margin-left: 101px;
+					line-height: 22px;
+					br{
+						display: inherit;
+					}
+				}
+				p:nth-child(1){
+					top: 32px;
+				}
+				p:nth-child(2){
+					top: 23px;
+				}
+				p:nth-child(3){
+					top: 23px;
+				}
+			}
+		}
+	}
+
+}
+

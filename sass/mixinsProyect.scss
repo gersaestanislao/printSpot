@@ -1,0 +1,83 @@
+@mixin centerAbsolute {
+  margin: auto;
+   position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@mixin centerAbsolute2 {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;  right: 0;
+}
+
+@mixin centerImage {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;  right: 0;
+}
+
+@mixin cover {
+ -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+@mixin wrapp{
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+@mixin wrappSmall{
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+}
+@mixin wrappLarge{
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+}
+
+@mixin cero {
+	padding: 0;
+	 margin: 0;
+}
+
+@mixin flexFlow {
+-webkit-flex-flow: row wrap;
+-ms-flex-flow: row wrap;
+flex-flow: row wrap;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+// -webkit-flex-flow: row-reverse wrap;
+//     -ms-flex-flow: row-reverse wrap;
+//         flex-flow: row-reverse wrap;
+
+  }
+.fineArt{
+  ::-webkit-scrollbar              { color: $yew; width: 10px; }
+  ::-webkit-scrollbar-button       { color: $yew; width: 10px; }
+  ::-webkit-scrollbar-track        { color: $yew; width: 10px; }
+  ::-webkit-scrollbar-track-piece  { color: $yew; width: 10px; }
+  ::-webkit-scrollbar-thumb        { color: $yew; width: 10px; }
+  ::-webkit-scrollbar-corner       { color: $yew; width: 10px; }
+  ::-webkit-resizer                { color: $yew; width: 10px; }
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+}
+ 
+// ::-webkit-scrollbar-track {
+//     -webkit-box-shadow: inset 0 0 6px $yew; 
+//     border-radius: 20px;
+// }
+.fineArt{ 
+  ::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      background: $yew;
+      border: 2px solid black;
+     
+  }
+}

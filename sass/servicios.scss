@@ -1,0 +1,341 @@
+
+section.serviciosIn2{
+ .wrapper{	
+ 	@include flexFlow ;
+    @include wrapp;	
+    article{
+    	width: 100%;
+    	color: black;
+    	padding: 36px 18px 9px;
+    	@media (min-width:992px) {
+    		padding: 36px 18px 0px;
+    	}
+    	h2{
+    		font-size: 24px;
+    		@include cero;
+    		font-weight: 700;
+    		@media (min-width:992px) {
+    			font-size: 30px;
+    		}	
+    	}
+    	p{
+    		font-size: 15px;
+    		font-weight: 100;
+    	}
+    	>ul {
+			    list-style: none;
+			    padding:0;
+			    margin:0;
+			    @include cero;
+
+			li { 
+			    padding-left: 1em; 
+			    text-indent: -.7em;
+			    font-weight: 100;
+			     margin: 4px 0;
+			      @media (min-width:992px) {
+                      margin: 18px 0;
+			      }
+			}
+
+			li:before {
+			    content: "✓ ";
+			    color: $pink; /* or whatever color you prefer */
+			}
+			li.aqua:before {
+				color: $aqua;
+			}
+			li.yew:before {
+				color: $yew;
+			}
+			li.orange:before {
+				color: $orange;
+			}
+	   }
+
+    }
+    article:nth-child(2){
+    	padding: 9px 0 0;
+    	.sliderr{
+    		ul{
+    			padding: 0;
+                margin: 0;
+    			li{
+		    		img{
+		    			width: 100% !important;
+		    		}
+    				
+    			}
+    		}
+	    	ul.slides {
+	    		height: 373px !important;
+	    		
+	    	}
+	    	.indicators{
+	    		z-index: 12;
+	    		bottom: 13px;
+	    		.indicator-item{
+	    			.active{
+	    			 color: $red !important;
+	    			 background-color: $red !important;; 
+	    			 }
+	    		}
+	    	}
+	   } 	
+    }
+    @media (min-width:992px) {
+    		padding: 36px 18px 36px;
+    	}
+  }  
+    @media (min-width:580px) {
+		  .wrapper{  	
+			     article{
+			     	width: 50%;
+			     }
+			     article:nth-child(2){
+			     	padding:  36px;
+			     }
+		    }
+      }
+}
+
+
+section.descriptivo{
+	background: black;
+	.wrapper{
+		@include flexFlow ;
+        @include wrapp;	
+        position: relative;
+        height: auto;
+        // article.two{
+        // 	order: 2;
+        // 	-webkit-order: 2;
+        // 	 @media (min-width:580px) {
+        // 	 	order: 1;
+        // 	     -webkit-order: 1;
+
+        // 	 }
+        // }
+        //  article.one{
+        // 	order: 1;
+        // 	-webkit-order: 1;
+        // 	 @media (min-width:580px) {
+        // 	 	order: 2;
+        // 	     -webkit-order: 2;
+
+        // 	 }
+        // }
+		 article{
+	    	width: 100%;
+	         color: white;
+	    	padding: 36px 18px 9px;
+	    	>span{
+	    			width: 100%;
+	    			display: block;
+	    			text-align: right;
+	    			 margin: -17px 14px;
+	    			i{
+	    				font-size: 42px;
+	    				color: $yew;
+	    			}
+	    		}
+	    	h2{
+	    		font-size: 24px;
+	    		@include cero;
+	    		font-weight: 700;
+	    		 @media (min-width:992px) {
+			    	font-size: 30px;
+
+			    }  	
+	    	}
+	    	p{
+	    		font-size: 15px;
+	    		font-weight: 100;
+	    	}
+	    	.fineArt{
+	    		margin: 0 0 9px;
+	    		tbody{
+	    			 width: 100%;
+					 height: 300px;
+					 overflow: auto;
+					 display: inline-block;
+					 tr{
+					 	display: table;
+					 	width: 100%;
+					 }
+	    			 th,td{
+                         width: 50%;
+	    			 }
+	    			  @media (min-width:992px) {
+	    				 
+
+	    			  }
+	    		}
+	    	}
+	    	table{
+	    		margin: 36px 0 9px;
+	    		
+	    		tr{
+	    			th{
+	    				background: $pink;
+	    				border-radius: 0;
+	    				padding: 9px 15px;
+	    			}
+	    			th,td{
+	    				text-align: center;
+	    			}
+	    			td{
+	    				border-bottom: 1px solid gray;
+	    			}
+	    		}
+	    		
+	    	}
+	    	dd {
+			    list-style: none;
+			    padding:0;
+			    margin:0;
+			    @include cero;
+
+			li { 
+			    padding-left: 1em; 
+			    text-indent: -.7em;
+			    font-weight: 100;
+			    margin: 18px 0;
+			    text-indent: 0;
+			    display: block;
+			    clear: both;
+			}
+            i{
+               float: left;
+               width: 11%;
+               height: 44px;
+               @media (min-width:992px) {
+               	 height: 43px;
+               	   width: 8%;
+               }
+		     span{
+		     	height: 20px;
+		     	width: 20px;
+		     	background: $pink;
+		     	border-radius: 50%;
+		     	padding: 4px 8px;
+		     	margin-right: 4px;
+		     }
+		   } 
+		   i.ll{
+		   	height: 85px;
+		   	@media (min-width:992px) {
+		   		 height: 46px;
+		   	}
+		   }
+		   i.ll2{
+		   	height: 176px;
+		   	@media (min-width:992px) {
+		   		 height: 106px;
+		   	}
+		   }
+		   p{
+		   	 float: left;
+		   	 width: 90%;
+		   	 margin: 0;
+		   }
+	     }
+	     figure{
+	     	@include cero;
+	     	img{
+	     		width: 100%;
+	     	}
+	     }
+
+	   } 
+	   article:nth-child(2)
+	   {
+	   	margin-bottom: 86px; 
+	   	@media (min-width:992px) {
+	   		margin-bottom: 0; 
+	   	}
+	   }	 
+	      button{
+
+		 	background-color: rgba(255, 255, 255, 0);
+		    border: 4px solid $pink;
+		    border-radius: 39px;
+		    font-size: 15px;
+		    height: 44px;
+		    color: white;
+		    width: 160px;
+		    bottom: 36px;
+		    transition: opacity .2s;
+		    @include centerAbsolute2;
+		    &:hover{
+		    	opacity: .6;
+		    }
+		    @media (min-width:992px) {
+		    	height:50px;
+		    }
+		 }
+		 button.aqua{
+		 	border: 4px solid $aqua;
+		 }
+		 button.yew{
+		 	border: 4px solid $yew;
+		 }
+		 button.oranges{
+		 	border: 4px solid $orange;
+		 }
+		 button.aquas{
+		 	border: 4px solid $aqua;
+		 }
+   }
+    @media (min-width:580px) {
+		  .wrapper{  	
+			     article{
+			     	width: 50%;
+			     	padding: 36px 24px 108px;
+			     	@media (min-width:801px) {
+                       padding: 36px 24px 90px;
+			     	}
+			     	@media (min-width:992px) {
+                       padding: 36px 24px 110px;
+			     	}
+			     	dd{
+			     		li{
+			     			margin: 24px 0;
+			     		}
+			     	}
+			     }
+			     
+		    }
+      } 
+
+}
+section.gallery{
+	.wrapper{
+		@include flexFlow ;
+        @include wrappLarge;	
+        position: relative;
+        height: auto;
+        margin-top: 7px;
+        figure{
+        	@include cero;
+        	overflow: hidden;
+        	width: 50%;
+            img{
+            	width: 100%;
+            }
+        }
+        @media (min-width:580px) {
+        	 figure{
+        	 	width: 25%;
+        	 }
+        }
+        @media (min-width:992px) {
+        	padding: 42px 0;
+            figure{
+            	padding: 0 18px;
+            }
+        }
+	}
+}
+
+
